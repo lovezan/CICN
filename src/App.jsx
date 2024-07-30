@@ -1,3 +1,4 @@
+// src/App.js
 import React from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
@@ -6,23 +7,29 @@ import Sponsors from './components/Sponsors';
 import UniversityImages from './components/UniversityImages';
 import LiveSection from './components/LiveSection'; // Import the new component
 import './App.css'; // Ensure Tailwind CSS is imported
+// src/index.js or src/App.js
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-gray-900 text-white w-full max-w-7xl mx-auto">
       <Navbar />
 
       {/* Hero Section */}
       <HeroSection />
 
-        <LiveSection /> {/* Add the new LiveSection component */}
+      {/* Live Section */}
+      <LiveSection />
+
       {/* Main Content */}
-      <main className="w-full max-w-full px-4 py-8">
+      <main className="px-4 py-8">
         <MainContent />
-        
+
         {/* Additional Sections */}
-        <Sponsors /> {/* Use the new Sponsors component */}
-        <UniversityImages />
+        {/* <div className="w-full">
+          <Sponsors />
+          <UniversityImages />
+        </div> */}
       </main>
 
       {/* Footer */}

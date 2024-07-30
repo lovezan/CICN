@@ -1,28 +1,55 @@
 // src/components/HeroSection.jsx
 import React from 'react';
-import heroImage from '../assets/conferance.jpg'; // Adjust the path based on your file structure
-import heroLogo from '../assets/hero_logo.png'; // Adjust the path based on your file structure
+import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Importing images
+import tech1 from '../assets/tech1.jpg';
+import tech2 from '../assets/tech2.jpg';
+import tech3 from '../assets/tech3.avif';
+import tech4 from '../assets/tech4.jpg';
+import tech5 from '../assets/tech5.jpg';
 
 const HeroSection = () => {
   return (
-    <header className="relative w-full h-[100vh] overflow-hidden">
-      <img
-        src={heroImage}
-        alt="Hero"
-        className="w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-60 p-4">
-        <div className="relative w-[60%] h-[60%] flex justify-center items-center">
+    <header className="relative w-full overflow-hidden">
+      <Carousel interval={5000}>
+        <Carousel.Item>
           <img
-            src={heroLogo}
-            alt="Hero Logo"
-            className="w-full h-full object-contain" // Adjust this as needed
+            src={tech1}
+            alt="Slide 1"
+            className="d-block w-100 h-[30vh] sm:h-[50vh] object-cover"
           />
-        </div>
-        <button className="bg-red-600 px-6 py-3 rounded-full text-lg font-semibold hover:bg-red-700 mt-6">
-          Learn More
-        </button>
-      </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            src={tech2}
+            alt="Slide 2"
+            className="d-block w-100 h-[30vh] sm:h-[50vh] object-cover"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            src={tech3}
+            alt="Slide 3"
+            className="d-block w-100 h-[30vh] sm:h-[50vh] object-cover"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            src={tech4}
+            alt="Slide 4"
+            className="d-block w-100 h-[30vh] sm:h-[50vh] object-cover"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            src={tech5}
+            alt="Slide 5"
+            className="d-block w-100 h-[30vh] sm:h-[50vh] object-cover"
+          />
+        </Carousel.Item>
+      </Carousel>
     </header>
   );
 };

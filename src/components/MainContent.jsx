@@ -39,19 +39,21 @@ const MainContent = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-5 gap-4 w-full">
+    <div className="grid grid-cols-1 md:grid-cols-5 gap-5 w-full">
       {/* Main Content Area (80%) */}
-      <div className="md:col-span-4 bg-gray-800 p-4 rounded-lg w-full">
+      <div className="md:col-span-5 bg-gray-800 p-4 rounded-lg w-full">
         <section className="mb-8">
           {selectedContent}
         </section>
       </div>
 
       {/* Sidebar (20%) */}
-      <aside className="md:col-span-1 space-y-4 w-full">
-        {/* Announcements Section */}
+
+      
+      {/* <aside className="md:col-span-1 space-y-4 w-full">
+        
         <Announcements handleClick={handleClick} />
-      </aside>
+      </aside> */}
 
       <ScrollToTop /> {/* Include the ScrollToTop component */}
     </div>
