@@ -1,18 +1,18 @@
-// src/App.js
 import React from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import MainContent from './components/MainContent';
+import Header from './components/Header';
 import Sponsors from './components/Sponsors';
 import UniversityImages from './components/UniversityImages';
 import LiveSection from './components/LiveSection'; // Import the new component
 import './App.css'; // Ensure Tailwind CSS is imported
-// src/index.js or src/App.js
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white w-full max-w-7xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-[#e0f7fa] to-[#81d4fa] text-white w-full max-w-[56rem] mx-auto">
+      <Header />
       <Navbar />
 
       {/* Hero Section */}

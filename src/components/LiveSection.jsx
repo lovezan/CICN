@@ -8,8 +8,8 @@ const LiveSection = () => {
   useEffect(() => {
     const textArray = [
       "16th IEEE International Conference CICN 2024",
-    //   "Join Us for Groundbreaking Research and Networking",
-    //   "Get the Latest Updates and Live Streams Here"
+      // "Join Us for Groundbreaking Research and Networking",
+      // "Get the Latest Updates and Live Streams Here"
     ];
     let index = 0;
 
@@ -22,15 +22,15 @@ const LiveSection = () => {
   }, []);
 
   return (
-    <section className="bg-gray-800 p-6 rounded-lg mt-8 cursor-pointer">
+    <section className="bg-gradient-to-r from-[#e0f7fa] to-[#81d4fa] p-4 rounded-lg shadow-lg mt0 max-w-4xl mx-auto">
       <div className="container mx-auto">
         {/* Animated Text with Live Symbol */}
-        <div className="flex items-center justify-center text-3xl font-bold mb-4 text-center text-red-600">
-          <div className="mr-3">
+        <div className="flex items-center justify-center text-xl md:text-2xl font-semibold mb-3 text-green-800">
+          <div className="mr-2">
             {/* Live Symbol */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8 text-red-600 animate-pulse"
+              className="h-6 w-6 md:h-8 md:w-8 text-red-600 animate-pulse"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -42,11 +42,11 @@ const LiveSection = () => {
               <circle cx="12" cy="12" r="4" />
             </svg>
           </div>
-          <span className="animate-text">{text}</span>
+          <span className="animate-text text-green-800">{text}</span>
         </div>
         
         {/* Static Content */}
-        <div className="text-lg text-red-600 text-center">
+        <div className="text-sm md:text-base text-green-600 text-center">
           <p>
             A conference proceedings that meet IEEE quality review standards may be eligible for inclusion in the IEEE Xplore Digital Library. IEEE reserves the right not to publish any proceedings that do not meet these standards.
           </p>
