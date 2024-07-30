@@ -1,0 +1,65 @@
+/* ImportantDates.css */
+
+.container {
+    margin-top: 2rem;
+  }
+  
+  .bg-gradient-to-r {
+    background: linear-gradient(to right, #2d2d2d, #3e3e3e);
+  }
+  
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .table th,
+  .table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #555;
+  }
+  
+  .table th {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .table tr:hover {
+    background-color: #555;
+  }
+  
+  .table .hover-shadow {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .table .hover-shadow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: all 0.6s ease;
+    z-index: 1;
+  }
+  
+  .table .hover-shadow:hover::before {
+    left: 100%;
+  }
+  
+  .text-white {
+    color: #fff;
+  }
+  
+  .text-gray-300 {
+    color: #d1d5db;
+  }
+  
+  .text-gray-700 {
+    color: #4a5568;
+  }
+  

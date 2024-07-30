@@ -1,0 +1,37 @@
+/* src/components/SpaceAnnouncements.css */
+.space-announcements {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px; /* Adjust width as needed */
+    height: 100%;
+    background-color: #1f2937; /* Dark Gray */
+    padding: 1rem; /* 16px */
+    border-radius: 0 0.5rem 0.5rem 0; /* Rounded corners on the left side */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: add shadow for better visibility */
+    transform: translateX(100%); /* Initially hide off-screen */
+    transition: transform 0.3s ease-in-out; /* Smooth slide-in effect */
+    z-index: 1000; /* Ensure it’s above other content */
+  }
+  
+  .space-announcements.show {
+    transform: translateX(0); /* Slide into view */
+  }
+  
+  .close-announcements-btn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: #e53e3e; /* Red */
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it’s above the announcements panel */
+  }
+  
+  .close-announcements-btn:hover {
+    background-color: #c53030; /* Darker red */
+  }
+  

@@ -1,0 +1,16 @@
+
+/* Ensure the grid container spans the full width */
+.grid {
+    width: 100%;
+  }
+  
+  /* Ensure main content area and sidebar take full width of their grid cells */
+  .md\:col-span-4, .md\:col-span-1 {
+    width: 100%;
+  }
+  
+  /* Optional: To handle overflow and prevent scrolling */
+  body {
+    overflow-x: hidden;
+  }
+  

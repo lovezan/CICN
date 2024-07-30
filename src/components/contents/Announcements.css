@@ -1,0 +1,15 @@
+/* Announcements.css */
+
+/* Base styles for the Announcements section */
+.announcements-section {
+  background-color: #1f2937; /* Dark Gray */
+  padding: 1rem; /* 16px */
+  border-radius: 0.5rem; /* 8px */
+}
+
+/* Hide the Announcements section on devices with a width of 430px or smaller */
+/* @media (max-width: 430px) {
+  .announcements-section {
+    display: none;
+  }
+} */
