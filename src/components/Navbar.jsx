@@ -8,11 +8,23 @@ const Navbar = ({ handleClick }) => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  // Debugging function
+  // Close menu and scroll to the target section
   const handleItemClick = (item) => {
-    console.log(`Clicked on ${item}`);
     if (handleClick) {
       handleClick(item);
+    }
+    setIsOpen(false); // Close the menu
+    scrollToSection(item); // Scroll to the target section
+  };
+
+  // Smooth scroll to the section based on the item clicked
+  const scrollToSection = (section) => {
+    const element = document.getElementById(section);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: 'smooth',
+      });
     }
   };
 
@@ -36,11 +48,10 @@ const Navbar = ({ handleClick }) => {
 
           {/* Registration Dropdown */}
           <div 
-            className="relative" 
-            onMouseEnter={() => setShowDropdown('registration')}
-            onMouseLeave={() => setShowDropdown(null)}
+            className="relative group"
+            onClick={() => setShowDropdown(showDropdown === 'registration' ? null : 'registration')}
           >
-            <a onClick={() => handleItemClick('Registration')}
+            <a 
               className="flex items-center gap-1 px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
               style={{ textDecoration: 'none' }}
             >
@@ -58,14 +69,14 @@ const Navbar = ({ handleClick }) => {
                   className="absolute left-0 top-full mt-1 w-48 rounded-md bg-blue-700 text-white shadow-lg z-50 border border-white"
                 >
                   <a 
-                    onClick={() => handleItemClick('Registration Process')} 
+                    onClick={() => handleItemClick('Registration')} 
                     className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs" 
                     style={{ textDecoration: 'none' }}
                   >
                     Registration Process
                   </a>
                   <a 
-                    onClick={() => handleItemClick('Fee Structure')} 
+                    onClick={() => handleItemClick('Registration')} 
                     className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs" 
                     style={{ textDecoration: 'none' }}
                   >
@@ -78,9 +89,8 @@ const Navbar = ({ handleClick }) => {
 
           {/* Author Exchange & Past Conferences Dropdown */}
           <div 
-            className="relative" 
-            onMouseEnter={() => setShowDropdown('authorPast')}
-            onMouseLeave={() => setShowDropdown(null)}
+            className="relative group"
+            onClick={() => setShowDropdown(showDropdown === 'authorPast' ? null : 'authorPast')}
           >
             <a 
               className="flex items-center gap-1 px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
@@ -148,14 +158,12 @@ const Navbar = ({ handleClick }) => {
             PROCEEDINGS
           </a>
 
-          {/* Committees */}
+          {/* Committees Dropdown */}
           <div 
-            className="relative cursor-pointer hover:bg-sky-400" 
-            onMouseEnter={() => setShowDropdown('committees')}
-            onMouseLeave={() => setShowDropdown(null)}
+            className="relative group"
+            onClick={() => setShowDropdown(showDropdown === 'committees' ? null : 'committees')}
           >
             <a 
-              onClick={() => handleItemClick('Committees')}
               className="flex items-center gap-1 px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
               style={{ textDecoration: 'none' }}
             >
@@ -173,14 +181,14 @@ const Navbar = ({ handleClick }) => {
                   className="absolute left-0 top-full mt-1 w-48 rounded-md bg-blue-700 text-white shadow-lg z-50 border border-white"
                 >
                   <a 
-                    onClick={() => handleItemClick('Organizing Committee')} 
+                    onClick={() => handleItemClick('Committees')} 
                     className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs" 
                     style={{ textDecoration: 'none' }}
                   >
                     Organizing Committee
                   </a>
                   <a 
-                    onClick={() => handleItemClick('Technical Committee')} 
+                    onClick={() => handleItemClick('Committees')} 
                     className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs" 
                     style={{ textDecoration: 'none' }}
                   >
@@ -193,9 +201,8 @@ const Navbar = ({ handleClick }) => {
 
           {/* Keynote Speakers & Sponsors Dropdown */}
           <div 
-            className="relative" 
-            onMouseEnter={() => setShowDropdown('keynoteSponsors')}
-            onMouseLeave={() => setShowDropdown(null)}
+            className="relative group"
+            onClick={() => setShowDropdown(showDropdown === 'keynoteSponsors' ? null : 'keynoteSponsors')}
           >
             <a 
               className="flex items-center gap-1 px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
@@ -243,6 +250,15 @@ const Navbar = ({ handleClick }) => {
           </a>
         </div>
       </div>
+
+      {/* Hover effect for larger screens */}
+      <style >{`
+        @media (min-width: 768px) {
+          .group:hover .absolute {
+            display: block;
+          }
+        }
+      `}</style>
     </nav>
   );
 };

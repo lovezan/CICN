@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import MainContent from './components/MainContent';
-import Sponsors from './components/Sponsors';
+
 import UniversityImages from './components/UniversityImages';
 import LiveSection from './components/LiveSection'; // Import the new component
 import './App.css'; // Ensure Tailwind CSS is imported
