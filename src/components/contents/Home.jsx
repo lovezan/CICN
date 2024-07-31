@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <section className="bg-gradient-to-r from-[#e0f7fa] to-[#81d4fa] p-4 rounded-lg shadow-lg">
+    <section className="p-4 rounded-lg shadow-lg">
       <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-center text-gray-800">
         16th IEEE International Conference on Computational Intelligence and Communication Networks (CICN 2024)
       </h2>

@@ -7,12 +7,12 @@ import image from '../../assets/sanchi_1.jpeg'; // Adjust the path based on your
 const PastConferences = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="bg-gradient-to-r from-gray-900 to-gray-800 p-6 rounded-lg shadow-2xl">
+      <div className="bg-gray-100 p-6 rounded-lg shadow-xl">
         <center>
-          <h1 className="text-4xl font-bold text-white mb-6">Past Conferences</h1>
+          <h1 className="text-3xl font-bold text-gray-800 mb-6">Past Conferences</h1>
         </center>
         <div className="space-y-6">
-          <ul className="list-disc list-inside space-y-2 text-gray-300">
+          <ul className="list-disc list-inside space-y-2 text-gray-800">
             <li>CICSyN 2009, Indore India 23-25 July 2009.</li>
             <li>CICN 2010, Bhopal India 26-28 Nov 2010</li>
             <li>NWeSP 2010, Gwalior India from 23-25 Nov 2010</li>
@@ -51,25 +51,25 @@ const PastConferences = () => {
           </ul>
         </div>
         <div className="mt-8 flex flex-wrap gap-6 justify-center">
-          <div className="relative w-60 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <div className="relative w-full sm:w-60 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <img src={sanchi} alt="Sanchi" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-white text-xl font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300">
               Sanchi
             </div>
           </div>
-          <div className="relative w-60 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <div className="relative w-full sm:w-60 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <img src={os1} alt="Event" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-white text-xl font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300">
               Event
             </div>
           </div>
-          <div className="relative w-80 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <div className="relative w-full sm:w-80 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <img src={image} alt="Conference" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-white text-xl font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300">
               Conference
             </div>
           </div>
-          <div className="relative w-72 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <div className="relative w-full sm:w-72 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <img src={os2} alt="Conference" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-white text-xl font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300">
               Conference

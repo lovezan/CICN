@@ -65,10 +65,10 @@ function App() {
       <LiveSection />
 
       {/* Main Content */}
-      <main className="px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-4 w-full max-w-[56rem] mx-auto">
+      <main className="px-2 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-0 w-full max-w-[56rem] mx-auto">
           {/* Main Content Area (67%) */}
-          <div className="md:col-span-4 bg-gradient-to-br from-[#ffffff] to-[#e0f7fa] p-4 rounded-lg shadow-md">
+          <div className="md:col-span-4 bg-gradient-to-br from-[#ffffff] to-[#e0f7fa] p-2 rounded-lg shadow-md">
             <section className="mb-8">
               {selectedContent}
             </section>

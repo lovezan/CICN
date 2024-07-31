@@ -1,15 +1,14 @@
-// src/components/Proceedings.jsx
 import React from 'react';
 import proceedingsExample from '../../assets/proceedings.png'; // Import the image
 
 const Proceedings = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg shadow-xl">
+      <div className="bg-white p-6 rounded-lg shadow-lg">
         <center>
-          <h1 className="text-3xl font-bold text-white mb-6">Proceedings</h1>
+          <h1 className="text-3xl font-bold text-gray-800 mb-6">Proceedings</h1>
         </center>
-        <div className="space-y-4 text-gray-300">
+        <div className="space-y-4 text-gray-800">
           <p className="leading-relaxed">
             "CICN 2024 proceedings will be published by Conference Publishing Services, and accepted and presented papers will be included in IEEE Xplore, provided they meet all the requirements as per IEEE Standards."
           </p>

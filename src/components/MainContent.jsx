@@ -1,4 +1,3 @@
-// src/components/MainContent.jsx
 import React, { useState } from 'react';
 import Home from './contents/Home';
 import CallForPapers from './contents/CallForPapers';
@@ -15,6 +14,7 @@ import PastConferences from './contents/PastConferences';
 import Tours from './contents/Tours';
 import ContactUs from './contents/ContactUs';
 import ScrollToTop from './contents/ScrollToTop';
+import './MainContent.css'; // Import the custom CSS
 
 const contentMap = {
   Home: <Home />,
@@ -39,22 +39,21 @@ const MainContent = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-6 gap-4 w-full max-w-[56rem] mx-auto">
-    {/* Main Content Area (67%) */}
-    <div className="md:col-span-4 bg-gradient-to-br from-[#ffffff] to-[#e0f7fa] p-4 rounded-lg shadow-md">
-      <section className="mb-8">
-        {selectedContent}
-      </section>
+    <div className="grid grid-cols-1 md:grid-cols-6 gap-0 w-full max-w-[56rem] mx-auto">
+      {/* Main Content Area (80%) */}
+      <div className="md:col-span-4 tech-background p-2 rounded-lg shadow-md relative">
+        <section className="mb-8">
+          {selectedContent}
+        </section>
+      </div>
+
+      {/* Sidebar (20%) */}
+      <aside className="md:col-span-1 space-y-4 w-full">
+        <Announcements handleClick={handleClick} />
+        <ImportantDates1 />
+      </aside>
+      <ScrollToTop /> {/* Include the ScrollToTop component */}
     </div>
-
-    {/* Sidebar (33%) */}
-    <aside className="md:col-span-2 space-y-4 w-full">
-      <Announcements handleClick={handleClick} /> {/* Include the Announcements component */}
-      <ImportantDates1 />
-    </aside>
-
-    <ScrollToTop /> {/* Include the ScrollToTop component */}
-  </div>
   );
 };
 

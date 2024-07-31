@@ -15,4 +15,26 @@
   }
   
 
-   
+   /* 3D Technology Background */
+.tech-background {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
+              linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.1) 50%, rgba(255, 255, 255, 0.3) 75%),
+              linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, rgba(0, 0, 0, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%);
+  background-blend-mode: overlay;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.tech-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05), transparent);
+  mix-blend-mode: overlay;
+  opacity: 0.3;
+  pointer-events: none; /* Ensures that the overlay does not interfere with clicks */
+}

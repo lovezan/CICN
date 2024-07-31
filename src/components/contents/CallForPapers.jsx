@@ -6,14 +6,14 @@ import sanchi1 from '../../assets/sanchi_1.jpeg';
 const CallForPapers = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg shadow-xl">
+      <div className="bg-gradient-to-r from-gray-100 to-gray-200 p-6 rounded-lg shadow-xl">
         <center>
-          <h2 className="text-3xl font-bold text-white mb-6">Call For Papers</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Call For Papers</h2>
         </center>
-        <p className="text-gray-300 text-lg leading-relaxed mb-6">
+        <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
           The 13th IEEE International Conference on Communication Systems and Network Technologies 2024 is planned to be organized to bring together selected minds from various research communities, to have brainstorming sessions on their research outcomes selected to be published on an international digital library. The participation is aimed from academia and industry working in all major areas and interdisciplinary areas of computational intelligence, communication systems, computer networks, and soft computing to share their experience, and exchange and cross-fertilize their ideas. CSNT 2024 will be conducted at Bhopal, India as a flagship conference of IEEE Madhya Pradesh Section. Papers are invited on the following track but not limited to:
         </p>
-        <ul className="list-disc list-inside text-gray-300 text-lg mb-6">
+        <ul className="list-disc list-inside text-gray-700 text-base md:text-lg mb-6">
           <li>Communication systems and Communication Standards</li>
           <li>Soft computing, Fuzzy Systems, and ANN</li>
           <li>Sensors and sensor networks</li>
@@ -41,9 +41,9 @@ const CallForPapers = () => {
           <li>VLSI and SOCs and Special session on Clean Energy and sustainable Technology in VLSI</li>
         </ul>
         <div className="flex flex-wrap justify-center gap-4 mb-6">
-          <img src={gw1} alt="first" className="w-80 h-auto rounded-lg shadow-lg" />
-          <img src={pmu2} alt="second" className="w-80 h-auto rounded-lg shadow-lg" />
-          <img src={sanchi1} alt="third" className="w-80 h-auto rounded-lg shadow-lg" />
+          <img src={gw1} alt="first" className="w-full md:w-1/3 h-auto rounded-lg shadow-lg" />
+          <img src={pmu2} alt="second" className="w-full md:w-1/3 h-auto rounded-lg shadow-lg" />
+          <img src={sanchi1} alt="third" className="w-full md:w-1/3 h-auto rounded-lg shadow-lg" />
         </div>
       </div>
     </div>
