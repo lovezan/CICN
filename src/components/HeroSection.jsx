@@ -18,35 +18,35 @@ const HeroSection = () => {
           <img
             src={tech1}
             alt="Slide 1"
-            className="d-block w-100 h-[30vh] sm:h-[50vh] object-cover"
+            className="d-block w-100 h-[17vh] sm:h-[17vh] object-cover"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             src={tech2}
             alt="Slide 2"
-            className="d-block w-100 h-[30vh] sm:h-[50vh] object-cover"
+            className="d-block w-100 h-[17vh] sm:h-[17vh] object-cover"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             src={tech3}
             alt="Slide 3"
-            className="d-block w-100 h-[30vh] sm:h-[50vh] object-cover"
+            className="d-block w-100 h-[17vh] sm:h-[17vh] object-cover"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             src={tech4}
             alt="Slide 4"
-            className="d-block w-100 h-[30vh] sm:h-[50vh] object-cover"
+            className="d-block w-100 h-[17vh] sm:h-[17vh] object-cover"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             src={tech5}
             alt="Slide 5"
-            className="d-block w-100 h-[30vh] sm:h-[50vh] object-cover"
+            className="d-block w-100 h-[17vh] sm:h-[17vh] object-cover"
           />
         </Carousel.Item>
       </Carousel>
