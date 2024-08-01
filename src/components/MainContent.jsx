@@ -5,6 +5,7 @@ import ImportantDates1 from './contents/ImportantDates1';
 import PaperSubmission from './contents/PaperSubmission';
 import Registration from './contents/Registration';
 import Proceedings from './contents/Proceedings';
+import ImportantDatesAndScheduling from './contents/ImportantDatesAndScheduling';
 import Committees from './contents/Committees';
 import Announcements from './contents/Announcements';
 import Speakers from './contents/Speakers';
@@ -21,6 +22,7 @@ const contentMap = {
   'Call for Papers': <CallForPapers />,
   'Paper Submission': <PaperSubmission />,
   Registration: <Registration />,
+  ImportantDatesAndScheduling: <ImportantDatesAndScheduling />,
   Proceedings: <Proceedings />,
   Committees: <Committees />,
   'Keynote Speakers': <Speakers />,

@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaCreditCard, FaCashRegister, FaMapMarkerAlt } from 'react-icons/fa'; // Importing icons
 
 const Registration = () => {
   return (
@@ -57,9 +58,12 @@ const Registration = () => {
           <p className="text-lg text-gray-800 mb-4"><strong><u>Payment Modes:</u></strong></p>
           
           <div className="mb-6">
-            <p className="text-gray-700 mb-2">
-              <strong><u>Payment by Credit Card/Debit Card/Internet Banking</u></strong> (Bank charges as applicable)
-            </p>
+            <div className="flex items-center justify-center mb-2">
+              <FaCreditCard className="text-2xl text-red-500 mr-2" />
+              <p className="text-gray-700 mb-2">
+                <strong><u>Payment by Credit Card/Debit Card/Internet Banking</u></strong> (Bank charges as applicable)
+              </p>
+            </div>
             <a 
               href="https://www.payumoney.com/paybypayumoney/#/26517" 
               target="_blank" 
@@ -84,9 +88,12 @@ const Registration = () => {
           </div>
 
           <div className="mb-6">
-            <p className="text-gray-700 mb-2">
-              <strong><u>Payment by NEFT / Cash (Indian Authors)</u></strong>
-            </p>
+            <div className="flex items-center justify-center mb-2">
+              <FaCashRegister className="text-2xl text-gray-700 mr-2" />
+              <p className="text-gray-700 mb-2">
+                <strong><u>Payment by NEFT / Cash (Indian Authors)</u></strong>
+              </p>
+            </div>
             <p className="text-gray-700 mb-2">
               <strong><u>Payment by Other than Indian Authors</u></strong>
             </p>
