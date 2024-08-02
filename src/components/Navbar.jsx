@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FiMenu, FiX, FiChevronDown } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';
-import './Navbar.css'; // Make sure to include your CSS file
 
 const Navbar = ({ handleClick }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,14 +8,16 @@ const Navbar = ({ handleClick }) => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  // Close menu and scroll to the target section
   const handleItemClick = (item) => {
     if (handleClick) {
       handleClick(item);
     }
-    setIsOpen(false);
-    scrollToSection(item);
+    setIsOpen(false); // Close the menu
+    scrollToSection(item); // Scroll to the target section
   };
 
+  // Smooth scroll to the section based on the item clicked
   const scrollToSection = (section) => {
     const element = document.getElementById(section);
     if (element) {
@@ -28,13 +29,15 @@ const Navbar = ({ handleClick }) => {
   };
 
   return (
-    <nav className="bg-blue-800 text-white sticky top-0 z-50 yanone-kaffeesatz-unique-class-500">
-      <div className="grid justify-items-center items-center border-b border-gray-600 md:flex md:justify-between md:px-6">
+    <nav className="bg-blue-800 text-white sticky top-0 z-50">
+      <div className="grid justify-items-center items-center border-b border-gray-600">
+        {/* Menu Button */}
         <button onClick={toggleMenu} className="text-xl w-full md:hidden flex justify-center items-center">
           {isOpen ? <FiX /> : <FiMenu />}
         </button>
 
-        <div className={`w-full md:flex md:items-center ${isOpen ? 'block' : 'hidden'}`}>
+        {/* Menu Items */}
+        <div className={`md:flex md:items-center ${isOpen ? 'block' : 'hidden'}`}>
           <a 
             onClick={() => handleItemClick('Home')} 
             className="block px-3 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
@@ -43,6 +46,7 @@ const Navbar = ({ handleClick }) => {
             HOME
           </a>
 
+          {/* Registration Dropdown */}
           <a 
             onClick={() => handleItemClick('Registration')} 
             className="block px-3 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
@@ -50,16 +54,18 @@ const Navbar = ({ handleClick }) => {
           >
             REGISTRATION
           </a>
+        
 
+          {/* Author Exchange & Past Conferences Dropdown */}
           <div 
             className="relative group"
             onClick={() => setShowDropdown(showDropdown === 'authorPast' ? null : 'authorPast')}
           >
             <a 
               className="flex items-center gap-1 px-3 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs" 
-              style={{ textDecoration: 'none', fontSize: '0.625rem' }}
+              style={{ textDecoration: 'none' ,fontSize: '0.625rem'} }
             >
-              PAPERSUBMISSION
+              PAPER SUBMISSION
               <FiChevronDown
                 className={`transition-transform ${showDropdown === 'authorPast' ? 'rotate-180' : ''}`}
               />
@@ -112,14 +118,16 @@ const Navbar = ({ handleClick }) => {
             </AnimatePresence>
           </div>
 
+          {/* Proceedings */}
           <a 
             onClick={() => handleItemClick('ImportantDates Scheduling')} 
             className="block px-3 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
             style={{ textDecoration: 'none' }}
           >
-            IMPORTANTDATES /
-            SCHEDULING
+            IMPORTANTDATES/SCHEDULING
           </a>
+
+          {/* Committees */}
 
           <a 
             onClick={() => handleItemClick('Committees')} 
@@ -128,7 +136,9 @@ const Navbar = ({ handleClick }) => {
           >
             COMMITTEES
           </a>
+        
 
+          {/* Keynote Speakers & Sponsors Dropdown */}
           <div 
             className="relative group"
             onClick={() => setShowDropdown(showDropdown === 'keynoteSponsors' ? null : 'keynoteSponsors')}
@@ -164,11 +174,19 @@ const Navbar = ({ handleClick }) => {
                   >
                     Sponsors
                   </a>
+                  {/* <a 
+                    onClick={() => handleItemClick('Tours')} 
+                    className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs" 
+                    style={{ textDecoration: 'none' }}
+                  >
+                    Tours
+                  </a> */}
                 </motion.div>
               )}
             </AnimatePresence>
           </div>
 
+          {/* Contact Us */}
           <a 
             onClick={() => handleItemClick('Contact Us')} 
             className="block px-3 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
@@ -179,7 +197,8 @@ const Navbar = ({ handleClick }) => {
         </div>
       </div>
 
-      <style>{`
+      {/* Hover effect for larger screens */}
+      <style >{`
         @media (min-width: 768px) {
           .group:hover .absolute {
             display: block;
