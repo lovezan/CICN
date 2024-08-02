@@ -22,7 +22,7 @@ const LiveSection = () => {
   }, []);
 
   return (
-    <section className="bg-gradient-to-r from-[#e0f7fa] to-[#81d4fa] p-4 rounded-lg shadow-lg mt0 max-w-4xl mx-auto ">
+    <section className="bg-gradient-to-r from-[#e0f7fa] to-[#81d4fa] p-4 rounded-lg shadow-lg mt-3 max-w-4xl mx-auto ">
       <div className="container mx-auto">
         {/* Animated Text with Live Symbol */}
         {/* <div className="flex items-center justify-center text-xl md:text-2xl font-semibold mb-3 text-green-800"> */}
