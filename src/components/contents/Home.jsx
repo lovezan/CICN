@@ -2,8 +2,8 @@ import React from "react";
 
 const Home = () => {
   return (
-    <section className="p-4 rounded-lg shadow-lg">
-      <div className="text-gray-800">
+    <section className="p-4 rounded-lg shadow-lg w-full">
+      <div className="text-gray-800 max-w-4xl mx-auto">
         <p className="text-center text-xl font-semibold mb-2">
           HYBRID Conference
         </p>

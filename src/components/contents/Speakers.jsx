@@ -10,7 +10,7 @@ const Speakers = () => {
         </center>
         <div className="space-y-8">
           {/* Speaker 1 */}
-          <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
+          <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200 text-justify">
             <div className="flex items-center space-x-6">
               <img 
                 src="src/assets/AmiriGolilarz.jpg" 
@@ -19,7 +19,7 @@ const Speakers = () => {
               />
               <div className="flex-1">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-                Assistant Prof. Noorbakhsh Amiri Golilarz
+                Dr. Noorbakhsh Amiri Golilarz
                 </h2>
                 <p className="text-gray-600 mb-4">
                 Affiliation: Department of Computer Science and Engineering, Mississippi State University,

@@ -63,7 +63,7 @@ const Navbar = ({ handleClick }) => {
           >
             <a 
               className="flex items-center gap-1 px-3 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs" 
-              style={{ textDecoration: 'none' ,fontSize: '0.625rem'} }
+              style={{ textDecoration: 'none'} }
             >
               PAPER SUBMISSION
               <FiChevronDown

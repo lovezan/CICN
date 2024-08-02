@@ -8,7 +8,7 @@ const Proceedings = () => {
         <center>
           <h1 className="text-3xl font-bold text-gray-800 mb-6">Proceedings</h1>
         </center>
-        <div className="space-y-4 text-gray-800">
+        <div className="space-y-4 text-gray-800 text-justify">
           <p className="leading-relaxed">
             "CICN 2024 proceedings will be published by Conference Publishing Services, and accepted and presented papers will be included in IEEE Xplore, provided they meet all the requirements as per IEEE Standards."
           </p>

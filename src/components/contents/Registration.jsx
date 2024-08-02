@@ -4,11 +4,11 @@ import { FaCreditCard, FaCashRegister, FaMapMarkerAlt } from 'react-icons/fa'; /
 const Registration = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
+      <div className="bg-gray-100 p-6 rounded-lg shadow-lg text-justify">
         <center>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Registration</h1>
         </center>
-        <p className="text-base md:text-lg text-gray-700 mb-4">
+        <p className="text-base md:text-lg text-gray-700 mb-4 ">
           The fee structure is as per the table below. Note that only one paper and one presenter are covered by an author registration. Authors with multiple papers need to register extra papers as per the chart below. However, if a single author is presenting multiple papers, some relaxation in registration fees will be given. This is not applicable for students. If more than one author is coming for the presentation, additional amounts for attendees must be credited. <strong>Normal paper is 5 pages, and each extra page costs US$15/page.</strong>
         </p>
         <div className="overflow-x-auto mb-8">
@@ -99,18 +99,18 @@ const Registration = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <img 
-                src="pmu2.jpg" 
-                alt="sanchi" 
+                src="../../assets/pmu2.jpg" 
+                alt="Image 1" 
                 className="w-44 h-32 object-cover rounded-lg shadow-md"
               />
               <img 
-                src="../banners/images.jpg" 
-                alt="ab" 
+                src="../../assets/images.jpg" 
+                alt="Image 2" 
                 className="w-44 h-32 object-cover rounded-lg shadow-md"
               />
               <img 
-                src="../banners/download (3).jpg" 
-                alt="gw" 
+                src="../../assets/download (3).jpg" 
+                alt="Image 3" 
                 className="w-80 h-32 object-cover rounded-lg shadow-md"
               />
             </div>

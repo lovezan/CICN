@@ -7,7 +7,7 @@ import image from '../../assets/sanchi_1.jpeg'; // Adjust the path based on your
 const PastConferences = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="bg-gray-100 p-6 rounded-lg shadow-xl">
+      <div className="bg-gray-100 p-6 rounded-lg shadow-xl text-justify">
         <center>
           <h1 className="text-3xl font-bold text-gray-800 mb-6">Past Conferences</h1>
         </center>

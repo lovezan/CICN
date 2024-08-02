@@ -6,7 +6,7 @@ import sanchi1 from '../../assets/sanchi_1.jpeg';
 const CallForPapers = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="bg-gradient-to-r from-gray-100 to-gray-200 p-6 rounded-lg shadow-xl">
+      <div className="bg-gradient-to-r from-gray-100 to-gray-200 p-6 text-justify rounded-lg shadow-xl">
         <center>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Call For Papers</h2>
         </center>
