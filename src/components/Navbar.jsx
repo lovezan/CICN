@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { FiMenu, FiX, FiChevronDown } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = ({ handleClick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(null);
+  const dropdownRef = useRef(null);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -27,6 +28,18 @@ const Navbar = ({ handleClick }) => {
       });
     }
   };
+
+  // Close dropdown if click is outside
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setShowDropdown(null);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   return (
     <nav className="bg-blue-800 text-white sticky top-0 z-50">
@@ -55,7 +68,6 @@ const Navbar = ({ handleClick }) => {
             REGISTRATION
           </a>
         
-
           {/* Author Exchange & Past Conferences Dropdown */}
           <div 
             className="relative group"
@@ -73,6 +85,7 @@ const Navbar = ({ handleClick }) => {
             <AnimatePresence>
               {showDropdown === 'authorPast' && (
                 <motion.div
+                  ref={dropdownRef}
                   initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 8 }}
@@ -128,7 +141,6 @@ const Navbar = ({ handleClick }) => {
           </a>
 
           {/* Committees */}
-
           <a 
             onClick={() => handleItemClick('Committees')} 
             className="block px-3 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
@@ -137,7 +149,6 @@ const Navbar = ({ handleClick }) => {
             COMMITTEES
           </a>
         
-
           {/* Keynote Speakers & Sponsors Dropdown */}
           <div 
             className="relative group"
@@ -155,6 +166,7 @@ const Navbar = ({ handleClick }) => {
             <AnimatePresence>
               {showDropdown === 'keynoteSponsors' && (
                 <motion.div
+                  ref={dropdownRef}
                   initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 8 }}
@@ -174,13 +186,6 @@ const Navbar = ({ handleClick }) => {
                   >
                     Sponsors
                   </a>
-                  {/* <a 
-                    onClick={() => handleItemClick('Tours')} 
-                    className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs" 
-                    style={{ textDecoration: 'none' }}
-                  >
-                    Tours
-                  </a> */}
                 </motion.div>
               )}
             </AnimatePresence>

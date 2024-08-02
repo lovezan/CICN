@@ -14,7 +14,7 @@ import tech5 from '../assets/tech5.jpg';
 const HeroSection = () => {
   return (
     <header className="relative w-full overflow-hidden">
-      <Carousel interval={1000}>
+      <Carousel interval={3000}>
         <Carousel.Item>
         <img
             src={or}
