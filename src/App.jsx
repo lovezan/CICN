@@ -55,7 +55,7 @@ function App() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#e0f7fa] to-[#81d4fa] text-white w-full max-w-[56rem] mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-[#e0f7fa] to-[#81d4fa] text-white w-full max-w-[100vw] mx-auto">
       <Header />
       
       <Navbar handleClick={handleClick}/>
@@ -68,7 +68,7 @@ function App() {
 
       {/* Main Content */}
       <main className="px-2 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-0 w-full max-w-[56rem] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-0 w-full max-w-[90vw] mx-auto">
           {/* Main Content Area (67%) */}
           <div className="md:col-span-4 bg-gradient-to-br from-[#ffffff] to-[#e0f7fa] p-2 rounded-lg shadow-md">
             <section className="mb-8">

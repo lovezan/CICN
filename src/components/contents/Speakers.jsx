@@ -13,30 +13,37 @@ const Speakers = () => {
           <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
             <div className="flex items-center space-x-6">
               <img 
-                src="src/assets/shakhmara.png" 
-                alt="Prof Seilov Shakhmara" 
+                src="src/assets/AmiriGolilarz.jpg" 
+                alt="Assistant Prof. Noorbakhsh Amiri Golilarz" 
                 className="w-24 h-24 rounded-full object-cover shadow-md"
               />
               <div className="flex-1">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-                  Prof. Seilov Shakhmara
+                Assistant Prof. Noorbakhsh Amiri Golilarz
                 </h2>
                 <p className="text-gray-600 mb-4">
-                  L.N. Gumilyov Eurasian National University, Kazakhstan
+                Affiliation: Department of Computer Science and Engineering, Mississippi State University,
+                MS, USA
                 </p>
               </div>
             </div>
             <p className="text-gray-800 font-medium mb-2">Biography:</p>
             <p className="text-gray-700">
-              President of the Kazakh Academy of Infocommunications, Dean of the Information Technologies Faculty of the L.N. Gumilyov Eurasian National University, candidate of technical sciences (1990) and doctor of economic sciences (2006), professor, academician of the International Academy of Communications (2004). 
-              Seilov Sh. has graduated in 1983 from the Leningrad (St. Petersburg) Electrotechnical Institute of Communications with a degree in automatic telecommunications. Since 1996, he worked in executive positions in Kazakh telecom JSC, Kazteleradio JSC.
-              In 2007, he founded the Kazakh Academy of Infocommunications, a non-governmental scientific consulting fund, dealing with market analysis and improvement of state regulation of the telecommunications sector, development of regulatory legal acts and technical regulations in the field of ICT. For the development of the Institute of Innovation, a project has been developed for the selection and commercialization of start-up projects using crowdfunding and cryptocurrency.
-              Under his leadership, significant projects include the “Model of universal service and provision of broadband access to the Internet in rural settlements of the republic”, and others.
+            Dr. Amiri Golilarz is an Assistant Research Professor in the Department of Computer Science
+and Engineering at Mississippi State University. He holds a Ph. D in Electrical and Computer
+Engineering from Southern Illinois University Carbondale, IL and a Doctor of Engineering
+degree in Computer Science and Technology from UESTC, China. He has also worked as a
+postdoctoral research fellow at Boston College, Massachusetts. He has extensive experience in
+Image Processing and Computer Vision, Machine Learning, Deep Convolutional Neural
+Network, and Disease Diagnosis using Deep Learning. Dr. Amiri has published various papers
+in high IF journals and IEEE conferences. He has also served as Editor-in-chief for two journals,
+and as a lead guest editor in several SCI-indexed journals. He is also the co-founder and Editor-
+in-chief of AI Letters, a double-blind peer-reviewed journal.
             </p>
           </div>
 
           {/* Speaker 2 */}
-          <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
+          {/* <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
             <div className="flex items-center space-x-6">
               <img 
                 src="src/assets/gohel.jpeg" 
@@ -60,7 +67,7 @@ const Speakers = () => {
 
               Dr. Gohel welcomes motivated undergraduate and graduate students to join his research team and contact him.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

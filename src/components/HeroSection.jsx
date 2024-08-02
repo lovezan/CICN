@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Importing images
 import tech1 from '../assets/tech1.jpg';
+import or from '../assets/or.jpeg';
 import tech2 from '../assets/tech2.jpg';
 import tech3 from '../assets/tech3.avif';
 import tech4 from '../assets/tech4.jpg';
@@ -15,38 +16,46 @@ const HeroSection = () => {
     <header className="relative w-full overflow-hidden">
       <Carousel interval={5000}>
         <Carousel.Item>
+        <img
+            src={or}
+            alt="Slide 1"
+            className="d-block w-100 h-[17vh] sm:h-[30vh] object-cover"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+        
           <img
             src={tech1}
             alt="Slide 1"
-            className="d-block w-100 h-[17vh] sm:h-[17vh] object-cover"
+            className="d-block w-100 h-[17vh] sm:h-[30vh] object-cover"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             src={tech2}
             alt="Slide 2"
-            className="d-block w-100 h-[17vh] sm:h-[17vh] object-cover"
+            className="d-block w-100 h-[17vh] sm:h-[30vh] object-cover"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             src={tech3}
             alt="Slide 3"
-            className="d-block w-100 h-[17vh] sm:h-[17vh] object-cover"
+            className="d-block w-100 h-[17vh] sm:h-[30vh] object-cover"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             src={tech4}
             alt="Slide 4"
-            className="d-block w-100 h-[17vh] sm:h-[17vh] object-cover"
+            className="d-block w-100 h-[17vh] sm:h-[30vh] object-cover"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             src={tech5}
             alt="Slide 5"
-            className="d-block w-100 h-[17vh] sm:h-[17vh] object-cover"
+            className="d-block w-100 h-[17vh] sm:h-[30vh] object-cover"
           />
         </Carousel.Item>
       </Carousel>
