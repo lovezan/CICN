@@ -8,10 +8,10 @@ const PaperSubmission = () => {
     <div className="container mx-auto px-4 py-8">
       <div className="bg-gray-100 p-6 rounded-lg shadow-xl">
         <center>
-          <h1 className="text-3xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-700">
+          <h1 className="text-3xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-700">
             Paper Submission: Open
           </h1>
-          <h3 className="text-xl font-semibold text-gray-700 mb-4">
+          <h3 className="text-xl font-semibold text-blue-700 mb-6 underline">
             Submission Guidelines
           </h3>
         </center>
@@ -26,7 +26,7 @@ const PaperSubmission = () => {
             may lead to the rejection of the paper.
           </p>
           <p className="leading-relaxed">
-            <span className="text-blue-500 font-semibold underline">
+            <span className="text-blue-800 font-semibold underline">
               Paper Submission:
             </span>{" "}
             Authors are encouraged to submit their papers using the EDAS online
@@ -35,12 +35,13 @@ const PaperSubmission = () => {
               href="https://edas.info/newPaper.php?c=32525"
               className="text-red-500 hover:underline"
             >
-              CLICK HERE
-            </a>
-            . You may contact us via email at <strong>cicnmir@gmail.com</strong>{" "}
-            if you face problems in submission. All papers will be peer-reviewed
-            by at least three independent referees from the panel of
-            international reviewers and will undergo a plagiarism check (Refer{" "}
+              CLICK
+            </a>{" "}
+            Links. You may contact us via email at{" "}
+            <strong>cicnmir@gmail.com</strong> if you face problems in submission. 
+            All papers will be peer-reviewed by at least three independent referees 
+            from the panel of international reviewers and will undergo a plagiarism 
+            check (Refer{" "}
             <a
               href="http://www.ieee.org/publications_standards/publications/rights/ID_Plagiarism.html"
               target="_blank"
@@ -54,20 +55,20 @@ const PaperSubmission = () => {
             The papers should be submitted in a 2-column IEEE standard format in
             .doc or .pdf format only. Authors are requested not to prefix their
             credentials (e.g., Dr., Prof.) in their names.{" "}
-            <span className="text-purple-500">
-              <a href="csnt_format.doc" download className="hover:underline">
+            <span className="text-purple-600">
+              <a href="/assets/csnt_format.doc" download className="hover:underline">
                 Download template for manuscript submission (.doc)
               </a>
             </span>
             ,{" "}
-            <span className="text-blue-500">
-              <a href="template.pdf" download className="hover:underline">
+            <span className="text-blue-600">
+              <a href="/assets/template.pdf" download className="hover:underline">
                 template (.pdf)
               </a>
             </span>
             , and{" "}
-            <span className="text-blue-500">
-              <a href="Latex.zip" download className="hover:underline">
+            <span className="text-blue-600">
+              <a href="/assets/Latex.zip" download className="hover:underline">
                 Latex (.zip)
               </a>
             </span>
@@ -77,7 +78,7 @@ const PaperSubmission = () => {
             Authors of accepted papers will need to sign an{" "}
             <a
               href="https://www.ieee.org/publications/rights/copyright-main.html"
-              className="text-blue-500 hover:underline"
+              className="text-blue-600 hover:underline"
             >
               IEEE copyright release form
             </a>{" "}
@@ -104,14 +105,9 @@ const PaperSubmission = () => {
             </strong>
           </p>
           <div className="flex flex-wrap justify-center gap-4 mt-6">
-            {/* <img
-              src={pmu2}
-              alt="Image 1"
-              className="w-full sm:w-64 h-auto sm:h-40 object-cover rounded-lg shadow-md"
-            /> */}
             <img
               src={oa1}
-              alt="Image 2"
+              alt="Image 1"
               className="w-full sm:w-64 h-auto sm:h-40 object-cover rounded-lg shadow-md"
             />
             <img
