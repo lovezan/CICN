@@ -15,22 +15,22 @@ const ContactUs = () => {
               <p>Contact Persons</p>
             </li>
             <li className="bg-gray-800 p-3 sm:p-4 rounded-lg shadow-md transition-transform transform hover:scale-105">
-              <p className="text-xs sm:text-sm md:text-base font-semibold mb-2 text-gray-100">
+              <p className="text-[10px] sm:text-xs md:text-sm font-semibold mb-2 text-gray-100">
                 Dr. Shailendra Singh, Oriental University
               </p>
-              <p className="text-xs sm:text-sm md:text-base mb-1 text-gray-300">
+              <p className="text-[10px] sm:text-xs md:text-sm mb-1 text-gray-300">
                 Mob: <a href="tel:+919425011658" className="text-blue-300 hover:underline">+91-9425011658</a>
               </p>
-              <p className="text-xs sm:text-sm md:text-base text-gray-300">
+              <p className="text-[10px] sm:text-xs md:text-sm text-gray-300">
                 Email: <a href="mailto:cicnmir@gmail.com" className="text-blue-300 hover:underline">shailendrasingh@orientaluniversity.in</a>
               </p>
             </li>
             <li className="bg-gray-800 p-3 sm:p-4 rounded-lg shadow-md transition-transform transform hover:scale-105">
-              <p className="text-xs sm:text-sm md:text-base font-semibold mb-2 text-gray-100">Dr. Robin Singh Bhadoria</p>
-              <p className="text-xs sm:text-sm md:text-base mb-1 text-gray-300">
+              <p className="text-[10px] sm:text-xs md:text-sm font-semibold mb-2 text-gray-100">Dr. Robin Singh Bhadoria</p>
+              <p className="text-[10px] sm:text-xs md:text-sm mb-1 text-gray-300">
                 Mob: <a href="tel:+919329744955" className="text-blue-300 hover:underline">+91-9329744955</a>
               </p>
-              <p className="text-xs sm:text-sm md:text-base text-gray-300">
+              <p className="text-[10px] sm:text-xs md:text-sm text-gray-300">
                 Email: <a href="mailto:cicnmir@gmail.com" className="text-blue-300 hover:underline">cicnmir@gmail.com</a>
               </p>
             </li>

@@ -220,7 +220,7 @@ const Committee = () => {
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 lg:mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">
                 {committee.title}
               </h3>
-              <ul className="list-disc list-inside text-gray-800 text-sm sm:text-base">
+              <ul className="list-disc list-inside text-gray-800 text-xs sm:text-sm text-justify">
                 {committee.members.map((member, i) => (
                   <li key={i} className="mb-1">
                     {member}
@@ -234,5 +234,6 @@ const Committee = () => {
     </div>
   );
 };
+
 
 export default Committee;
