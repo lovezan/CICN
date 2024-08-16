@@ -5,7 +5,8 @@ const Home = () => {
     <section className="p-4 rounded-lg shadow-lg w-full">
       <div className="text-gray-800 max-w-4xl mx-auto">
         <p className="text-center text-xl font-semibold mb-2">
-          HYBRID Conference
+        (HYBRID Mode of Presentation)
+
         </p>
         <p className="text-center text-xl font-bold mb-4">
           Welcome to CICN 2024

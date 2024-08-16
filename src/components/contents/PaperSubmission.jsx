@@ -104,11 +104,11 @@ const PaperSubmission = () => {
             </strong>
           </p>
           <div className="flex flex-wrap justify-center gap-4 mt-6">
-            <img
+            {/* <img
               src={pmu2}
               alt="Image 1"
               className="w-full sm:w-64 h-auto sm:h-40 object-cover rounded-lg shadow-md"
-            />
+            /> */}
             <img
               src={oa1}
               alt="Image 2"

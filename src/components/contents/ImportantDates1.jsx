@@ -1,6 +1,6 @@
 // src/components/contents/ImportantDates1.jsx
 import React from 'react';
-import './importantDates1.css'; // Import the additional CSS file
+// import './importantDates1.css'; // Import the additional CSS file
 
 const ImportantDates1 = () => {
   const dates = [

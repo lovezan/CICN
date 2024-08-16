@@ -1,17 +1,30 @@
-import React from 'react';
-import gw1 from '../../assets/gw1.jpeg';
-import pmu2 from '../../assets/pmu2.jpeg';
-import sanchi1 from '../../assets/sanchi_1.jpeg';
+import React from "react";
+import gw1 from "../../assets/gw1.jpeg";
+import pmu2 from "../../assets/pmu2.jpeg";
+import sanchi1 from "../../assets/sanchi_1.jpeg";
 
 const CallForPapers = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="bg-gradient-to-r from-gray-100 to-gray-200 p-6 text-justify rounded-lg shadow-xl">
         <center>
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Call For Papers</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+            Call For Papers
+          </h2>
         </center>
         <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
-          The 13th IEEE International Conference on Communication Systems and Network Technologies 2024 is planned to be organized to bring together selected minds from various research communities, to have brainstorming sessions on their research outcomes selected to be published on an international digital library. The participation is aimed from academia and industry working in all major areas and interdisciplinary areas of computational intelligence, communication systems, computer networks, and soft computing to share their experience, and exchange and cross-fertilize their ideas. CSNT 2024 will be conducted at Bhopal, India as a flagship conference of IEEE Madhya Pradesh Section. Papers are invited on the following track but not limited to:
+          The 16th IEEE International Conference on Communication Systems and
+          Network Technologies 2024 is planned to be organized to bring together
+          selected minds from various research communities, to have
+          brainstorming sessions on their research outcomes selected to be
+          published on an international digital library. The participation is
+          aimed from academia and industry working in all major areas and
+          interdisciplinary areas of computational intelligence, communication
+          systems, computer networks, and soft computing to share their
+          experience, and exchange and cross-fertilize their ideas. CSNT 2024
+          will be conducted at Bhopal, India as a flagship conference of IEEE
+          Madhya Pradesh Section. Papers are invited on the following track but
+          not limited to:
         </p>
         <ul className="list-disc list-inside text-gray-700 text-base md:text-lg mb-6">
           <li>Communication systems and Communication Standards</li>
@@ -38,7 +51,10 @@ const CallForPapers = () => {
           <li>Control systems, Power Systems, transmission system</li>
           <li>Big Data and Internet of Things</li>
           <li>MIMO and MEMS</li>
-          <li>VLSI and SOCs and Special session on Clean Energy and sustainable Technology in VLSI</li>
+          <li>
+            VLSI and SOCs and Special session on Clean Energy and sustainable
+            Technology in VLSI
+          </li>
         </ul>
         <div className="flex flex-wrap justify-center gap-4 mb-6">
           {/* <img src={gw1} alt="first" className="w-full md:w-1/3 h-auto rounded-lg shadow-lg" />
