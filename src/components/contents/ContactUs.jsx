@@ -13,9 +13,9 @@ const ContactUs = () => {
               <p>Contact Persons</p>
             </li>
             <li className="bg-gray-800 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105">
-              <p className="text-lg font-semibold mb-2 text-gray-100">Dr. Shailendra Singh</p>
+              <p className="text-lg font-semibold mb-2 text-gray-100">Dr. Shailendra Singh, Oriental University</p>
               <p className="mb-1 text-gray-300">Mob: <a href="tel:+919425011658" className="text-blue-300 hover:underline">+91-9425011658</a></p>
-              <p className="text-gray-300">Email: <a href="mailto:cicnmir@gmail.com" className="text-blue-300 hover:underline">cicnmir@gmail.com</a></p>
+              <p className="text-gray-300">Email: <a href="mailto:cicnmir@gmail.com" className="text-blue-300 hover:underline">shailendrasingh@orientaluniversity.in</a></p>
             </li>
             <li className="bg-gray-800 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105">
               <p className="text-lg font-semibold mb-2 text-gray-100">Dr. Robin Singh Bhadoria</p>

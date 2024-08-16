@@ -43,7 +43,7 @@ in-chief of AI Letters, a double-blind peer-reviewed journal.
           </div>
 
           {/* Speaker 2 */}
-          {/* <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
+          <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
             <div className="flex items-center space-x-6">
               <img 
                 src="src/assets/gohel.jpeg" 
@@ -67,7 +67,7 @@ in-chief of AI Letters, a double-blind peer-reviewed journal.
 
               Dr. Gohel welcomes motivated undergraduate and graduate students to join his research team and contact him.
             </p>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>

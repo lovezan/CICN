@@ -1,9 +1,30 @@
 import React from 'react';
-import ou2 from '../../assets/ou2.jpeg'; // Adjust path based on your folder structure
-import pmu from '../../assets/prnce_muhammad_fahd.png'; // Adjust path based on your folder structure
-import technicalSponsorImage from '../../assets/mir.png'; // Replace with your image path
 
-import Sponsors1 from '../../components/Sponsors';
+// Importing images
+import Ieee from '../../assets/IEEE.jpeg';
+import ou from '../../assets/ou_logo.jpg';
+import mir from '../../assets/mir.png';
+import iete1 from '../../assets/IETE_G.jpg';
+import iete2 from '../../assets/IETE.png';
+const sections = [
+  {
+    title: 'Organized and Hosted at',
+    description: 'Oriental University, Indore (MP) IEEE Madhya Pradesh Section',
+    images: [
+      { src: ou, alt: 'Oriental University Indore' },
+      { src: Ieee, alt: 'Technical Sponsor' },
+    ],
+  },
+  {
+    title: 'Technically Co-Sponsered',
+    description: 'MIR Labs and IETE Gwalior',
+    images: [
+      { src: mir, alt: 'Mir labs' },
+      { src: iete2, alt: 'iete Gwalior' },
+    ],
+  },
+  // Add more sections as needed
+];
 
 const Sponsors = () => {
   return (
@@ -13,56 +34,27 @@ const Sponsors = () => {
           Sponsors and Organizers
         </h1>
 
-        <section className="my-10">
-          <h2 className="text-3xl font-semibold text-gray-900 mb-6 border-b-4 border-teal-500 pb-2">
-            Organizers
-          </h2>
-          <div className="flex flex-col md:flex-row items-center md:justify-between mb-8">
-            <div className="text-lg text-teal-700 mb-4 md:mb-0">
-              <strong className="text-2xl">Oriental University Indore and IEEE Madhya Pradesh Section</strong>
+        {sections.map((section, index) => (
+          <section key={index} className="my-10">
+            <h2 className="text-3xl font-semibold text-gray-900 mb-6 border-b-4 border-teal-500 pb-2">
+              {section.title}
+            </h2>
+            <div className="text-lg text-teal-700 mb-4">
+              <strong className="text-2xl">{section.description}</strong>
             </div>
-            <img 
-              src={ou2} 
-              alt="Oriental University Indore" 
-              className="w-full md:w-64 h-auto object-contain rounded-lg shadow-md"
-            />
-          </div>
-        </section>
-
-        <section className="my-10">
-          <h2 className="text-3xl font-semibold text-gray-900 mb-6 border-b-4 border-teal-500 pb-2">
-            Technical Sponsor
-          </h2>
-          <div className="text-lg text-teal-700 mb-4">
-            <strong className="text-2xl">MIR Labs and IETE Gwalior</strong>
-          </div>
-          <div className="flex justify-center">
-            <img 
-              src={technicalSponsorImage} 
-              alt="Technical Sponsor" 
-              className="w-56 h-auto object-contain rounded-lg shadow-md"
-            />
-          </div>
-        </section>
-
-        {/* Uncomment if needed */}
-        {/* <section className="my-10">
-          <h2 className="text-3xl font-semibold text-gray-900 mb-6 border-b-4 border-teal-500 pb-2">
-            Best Paper Awards Sponsored By
-          </h2>
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="text-lg text-teal-700 mb-4 md:mb-0">
-              <strong className="text-2xl">SERSC, South Korea</strong>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {section.images.map((image, idx) => (
+                <div key={idx} className="flex justify-center">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-auto object-contain rounded-lg shadow-md"
+                  />
+                </div>
+              ))}
             </div>
-            <img 
-              src={sersc} 
-              alt="SERSC" 
-              className="ml-0 md:ml-4 w-full md:w-60 h-auto object-contain rounded-lg shadow-md" 
-            />
-          </div>
-        </section> */}
-        
-        <Sponsors1/>
+          </section>
+        ))}
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FiMenu, FiX, FiChevronDown } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';
-
+import "./Navbar.css"
 const Navbar = ({ handleClick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(null);
@@ -45,7 +45,7 @@ const Navbar = ({ handleClick }) => {
     <nav className="bg-blue-800 text-white sticky top-0 z-50">
       <div className="grid justify-items-center items-center border-b border-gray-600">
         {/* Menu Button */}
-        <button onClick={toggleMenu} className="text-xl w-full md:hidden flex justify-center items-center">
+        <button onClick={toggleMenu} className="text-xl w-full md:hidden flex justify-center items-center"  >
           {isOpen ? <FiX /> : <FiMenu />}
         </button>
 

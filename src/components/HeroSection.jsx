@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Importing images
 import tech1 from '../assets/tech1.jpg';
 import or from '../assets/or.jpeg';
-import Ou from '../assets/first.jpg';
+import Ou from '../assets/Hero_ou.jpg';
 import tech2 from '../assets/tech2.jpg';
 import tech3 from '../assets/tech3.avif';
 import tech4 from '../assets/tech4.jpg';
