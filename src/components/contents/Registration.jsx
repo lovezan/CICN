@@ -128,17 +128,17 @@ const Registration = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <img
-                src="../../assets/pmu2.jpg"
+                src={pmu2}
                 alt="Image 1"
                 className="w-44 h-32 object-cover rounded-lg shadow-md"
               />
               <img
-                src="../../assets/images.jpg"
+                src={images} 
                 alt="Image 2"
                 className="w-44 h-32 object-cover rounded-lg shadow-md"
               />
               <img
-                src="../../assets/download (3).jpg"
+                src={download} 
                 alt="Image 3"
                 className="w-80 h-32 object-cover rounded-lg shadow-md"
               />
