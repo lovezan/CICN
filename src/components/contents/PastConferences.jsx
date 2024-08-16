@@ -51,24 +51,24 @@ const PastConferences = () => {
           </ul>
         </div>
         <div className="mt-8 flex flex-wrap gap-6 justify-center">
-          <div className="relative w-full sm:w-60 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          {/* <div className="relative w-full sm:w-60 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <img src={sanchi} alt="Sanchi" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-white text-xl font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300">
               Sanchi
             </div>
-          </div>
+          </div> */}
           <div className="relative w-full sm:w-60 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <img src={os1} alt="Event" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-white text-xl font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300">
               Event
             </div>
           </div>
-          <div className="relative w-full sm:w-80 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          {/* <div className="relative w-full sm:w-80 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <img src={image} alt="Conference" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-white text-xl font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300">
               Conference
             </div>
-          </div>
+          </div> */}
           <div className="relative w-full sm:w-72 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <img src={os2} alt="Conference" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-white text-xl font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300">

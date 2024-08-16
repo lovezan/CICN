@@ -127,11 +127,11 @@ const Registration = () => {
               </strong>
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <img
+              {/* <img
                 src={pmu2}
                 alt="Image 1"
                 className="w-44 h-32 object-cover rounded-lg shadow-md"
-              />
+              /> */}
               <img
                 src={images} 
                 alt="Image 2"

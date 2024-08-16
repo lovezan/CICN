@@ -41,9 +41,9 @@ const CallForPapers = () => {
           <li>VLSI and SOCs and Special session on Clean Energy and sustainable Technology in VLSI</li>
         </ul>
         <div className="flex flex-wrap justify-center gap-4 mb-6">
-          <img src={gw1} alt="first" className="w-full md:w-1/3 h-auto rounded-lg shadow-lg" />
+          {/* <img src={gw1} alt="first" className="w-full md:w-1/3 h-auto rounded-lg shadow-lg" />
           <img src={pmu2} alt="second" className="w-full md:w-1/3 h-auto rounded-lg shadow-lg" />
-          <img src={sanchi1} alt="third" className="w-full md:w-1/3 h-auto rounded-lg shadow-lg" />
+          <img src={sanchi1} alt="third" className="w-full md:w-1/3 h-auto rounded-lg shadow-lg" /> */}
         </div>
       </div>
     </div>
