@@ -1,233 +1,234 @@
-import React from 'react';
+import React from "react";
+
+const committees = [
+  {
+    title: "Honorary Chairs",
+    members: [
+      "Prof. Sunil K. Somani, Oriental University, Indore",
+      "Prof. GS Tomar, REC Sonbhadra, UP",
+      "Prof. Dhruva Ghai, Oriental University, Indore",
+      "Prof. Garima Ghai, Oriental University, Indore",
+    ],
+  },
+  {
+    title: "General Chairs",
+    members: [
+      "Prof. Shailendra Singh, Oriental University, Indore",
+      "Prof. Manish Dixit, MITS Gwalior",
+    ],
+  },
+  {
+    title: "General Co-Chairs",
+    members: [
+      "Dr. Abul Bashar, PMU, United Arab Emirates",
+      "Dr. Robin Singh Bhadoria, NIT Hamirpur",
+      "Dr. Manish Vyas, Oriental University, Indore",
+    ],
+  },
+  {
+    title: "Technical Program Committee Chairs",
+    members: [
+      "Dr. Atul Agarwal, Oriental University, Indore",
+      "Dr. Vivek Singh Kushwah, CBIT Hyderabad",
+      "Dr. Ashish Bagwari, WIT Dehradun",
+    ],
+  },
+  {
+    title: "Finance Committee Chairs",
+    members: [
+      "Dr. MPS Chawla, SGSITS Indore",
+      "Dr. Musti KS Sastry, NUST Namibia",
+    ],
+  },
+  {
+    title: "Publication Committee Chairs",
+    members: [
+      "Dr. Megha Singh, Oriental University, Indore",
+      "Dr. Bishwajeet Pandey, Astana IT University, Kazakhstan",
+      "Mr. Anubhav Singh, Redbus Pvt Ltd",
+    ],
+  },
+  {
+    title: "Workshop Chairs",
+    members: [
+      "Dr. Ashraf Samarah, Kettering University, USA",
+      "Dr. Alhad Kuwadekar, Pai Group BV, Netherlands",
+      "Dr. Debnath Bhattacharyya, KL University, Andhra Pradesh",
+    ],
+  },
+  {
+    title: "Publicity Committee Chairs",
+    members: [
+      "Dr. Jagdish Bansal, South Asia University, New Delhi",
+      "Dr. Jitendra Agrawal, RGPV Bhopal",
+      "Mr. Kuldeep Singh Jadon, NIT Hamirpur",
+    ],
+  },
+  {
+    title: "Hospitality Committee Chairs",
+    members: [
+      "Ms. Fiona Lawrence, Oriental University, Indore",
+      "Ms. Pakiza Khan, Oriental University, Indore",
+      "Mr. Mohammad Javed, Oriental University, Indore",
+      "Mr. Manoj Biswakarma, Oriental University, Indore",
+      "Ms. Arpita Gupta, Oriental University, Indore",
+      "Ms. Preeti Puranik, Oriental University, Indore",
+    ],
+  },
+  {
+    title: "Technical Program Committee",
+    members: [
+      "Prof. Tai Hoon Kim, Korea",
+      "Prof. Dr. Mehmet Efe, Turkey",
+      "Dr. Layth AbdulRasool, Iran",
+      "Prof. Narendra S. Chaudhari, IIT Indore, India",
+      "Prof. Dr. Ilias Savvas, Greece",
+      "Dr. Ratheesh Kumar Meleppa, University of California, Davis, USA",
+      "Dr. Sanjay Sutar, BATU Lonere",
+      "Prof. Manjushree Adhha, BATU Lonere",
+      "Dr. Brijesh Iyyer, BATU Lonere",
+      "Prof. Manmohan Shukla, PSIT Kanpur",
+      "Dr. Dharmendra Dixitl, REC Sonbhadra",
+      "Dr. NS Jadhav, BATU Lonere",
+      "Prof. Fahrettin Sadıkoğlu, Cyprus",
+      "Prof. Ali Haydar, Cyprus",
+      "Dr. Kamil Dimililer, Cyprus",
+      "Dr. Hüseyin Öztoprak, Cyprus",
+      "Dr. Tayfun Nesimoğlu, Cyprus",
+      "Prof. Ciro Rodriguez, Peru",
+      "Prof. Stephen Wagner, Brazil",
+      "Prof. Jorge Barbosa, Brazil",
+      "Prof. Rajeev Tripathi, MNNIT Allahabad",
+      "Dr. KV Arya, IIITM Gwalior, India",
+      "Dr. Harkirat Singh, Samsung, USA",
+      "Dr. Ngoc Tu Nguyen, Missouri University, USA",
+      "Dr. Maman Abdurohman, Institut Teknologi Telkom, Indonesia",
+      "Prof. Dr. Hai Jiang, Arkansas State University, USA",
+      "Dr. Varun Jeoti, Petronas, Malaysia",
+      "Dr. Joanne Scillitoe, Michigan Tech Univ, USA",
+      "Prof. Dr. Helen Karatza, Greece",
+      "Prof. Dr. Anna Lekova, Bulgaria",
+      "Dr. Azrin Aris, Malaysia",
+      "Dr. Jongman Cho, Korea",
+      "Dr. BDK Patro, REC Kannauj",
+      "Dr. Ranjeet Singh Tomar, ITM University, Gwalior, India",
+      "Dr. Neeraj Shrivastava, RJIT Tekanpur, India",
+      "Dr. Sanjay Singh Kushwah, GIIT Gwalior, India",
+      "Dr. Mamdouh Gouda, Egypt",
+      "Dr. Beatris M, Spain",
+      "Dr. Sani Sushanto, Indonesia",
+      "Dr. Yong Ju Lee, Korea",
+      "Dr. Amit Ojha, MANIT, Bhopal",
+      "Prof. Dr. M.C. Govil, MNIT, Jaipur, India",
+      "Prof. Dr. O.B.V. Ramanaiya, JNTU, Hyderabad, India",
+      "Prof. Dr. Alaknanda Ashok, WIT Dehradun",
+      "Prof. Dr. Pedro Albertos, Univ. Politecnica Valencia, Spain",
+      "Prof. Dr. Mandava Rajeshwari, USM, Malaysia",
+      "Dr. Xua Han, Kains Ave, USA",
+      "Prof. Dr. Shailendra Singh, NITTTR",
+      "Prof. Dr. Victor Govindaswamy, USA",
+      "Prof. Dr. MS Whang, Brazil",
+      "Dr. Trapti Jain, IIT Indore, India",
+      "Dr. A.A. Lofti Neyestanak, Iran",
+      "Prof. Dr. Houssem Jerbi, Lecap- Tunisia",
+      "Prof. Dr. P. Chatterjee, National Tech. University, Argentina",
+      "Dr. Aresh Dadlani, University of Tehran, Iran",
+      "Prof. Dr. N. Krishnan, MSU, India",
+      "Prof. Dr. B.K. Kanaujia, JNU Delhi",
+      "Prof. Dr. Ghanshyam Singh, MNIT, Jaipur, India",
+      "Dr. Surendra Gupta, Delhi",
+      "Dr. BK Kaushik, IIT Roorkee",
+      "Mr. Kunal Patel, Ingenuity Systems, USA",
+      "Dr. Sahnaz Ayub, BIET, Jhansi, India",
+      "Dr. Amitabha, Dublin University",
+      "Dr. Alhad Kuwadekar, Univ of South Wales, UK",
+      "Dr. Hon Tat Hui, NUS, Singapore",
+      "Dr. Ashok Singh, IIT Patna, India",
+      "Dr. Yusuke Nojima, Osaka Prefecture University",
+      "Prof. Dr. Frédéric Pinel, Luxembourg",
+      "Dr. N.Ch.Sriman Narayana Iyengar, VIT Vellore, India",
+      "Dr. Manoj Shukla, HBTI, Kanpur, India - Track Chair",
+      "Dr. Shuza Binzaid, Texas University",
+      "Prof. Mario Koeppen, Kyushu Institute of Technology, Fukuoka, Japan",
+      'Prof. Dr. Michele Vadursi, University of Naples "Parthenope", Italy',
+      "Dr. Rawya Rizk, Port-Said University, Egypt",
+      "Dr. Junichi Funasaka, Hiroshima City University, Japan",
+      "Dr. Mourad Abbas, Phonetics and Speech Processing Lab, crstdla, Algiers",
+      "Dr. Zutao Zhu, Google Inc., Japan",
+      "Dr. Simon Dobson, Univ. of St. Andrews, UK",
+      "Dr. Amitabha Chakraborty, Dublin University, Ireland",
+      "Prof. Jaime Caro, University of the Philippines, Philippines",
+      "Mr. Abhineet Tomar, Volvo, Sweden",
+      "Dr. DK Tripathi, REC Sonbhadra",
+      "Dr. Brijesh Kumar Chaurasia, PSIT Kanpur",
+      "Dr. Paolo Roberto Grassi, Milan, Italy",
+      "Dr. Bareh Asadi, Iran",
+      "Dr. Sanjeev Sharma, RGPV Bhopal",
+      "Dr. Biju Issac, Teesside University, Middlesbrough, Tees Valley, UK",
+      "Prof. Dr. Cai Zhimming, Macau University, China",
+      "Dr. Laxmit Shrivastava, MITS Gwalior",
+      "Prof. MPS Chawla, SGSITS Indore",
+      "Dr. Manmohan Shukla, PSIT Kanpur",
+      "Dr. Ruidan Su, Dalian, China - Track Chair",
+      "Dr. Roshan Chhetri, Bhutan",
+      "Prof. Dr. Li Jun Zhang, Champlain College, USA",
+      "Dr. Arvind Singh, UWI Trinidad",
+      "Dr. Amir Houmansadr, University of Texas, Austin",
+      "Dr. Thorsten Schöler, Germany",
+      "Dr. Zhiyuan Tan, Australia",
+      "Dr. Ashish Agrawal, Boston University, USA",
+      "Dr. Subhashis Bhattacharya, Bristol University, UK",
+      "Dr. Jens Nielsen, Aalborg University, Denmark",
+      "Dr. Dong Huang, China",
+      "Dr. Jiewen Huang, China",
+      "Dr. Ankit Chaudhary, MUM, Fairfield, USA",
+      "Dr. Imad Jawhar, United Arab Emirates University, Al Ain, UAE",
+      "Dr. Martyna Ulinowicz, Warsaw University of Technology, Poland",
+      "Dr. Velmurugan Ayyadurai, University of Surrey, UK",
+      "Prof. Dr. Rodrigo C. Bortoletto, São Paulo Federal Institute, Brazil",
+      "Dr. Shikha Agrawal, RGPV, Bhopal",
+      "Dr. Gregorio Andria, Italy",
+      "Dr. Danilo Pelusi, University of Teramo, Italy",
+      "Dr. Abhishek Shukla, KNIT Sultanpur",
+      "Dr. Deng Huifang, Guangzhou, China",
+      "Dr. Deepak Singh Tomar, MANIT, Bhopal, India",
+      "Dr. Tatsuya Suda, University Netgroup Inc., USA",
+    ],
+  },
+  // Add other committees here
+];
 
 const Committee = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="bg-gray-100 p-6 rounded-lg shadow-xl">
+    <div className="container mx-auto px-4 py-12 text-gray-900">
+      <div className="bg-gray-200 p-12 rounded-3xl shadow-lg">
         <center>
-          <h1 className="text-4xl font-bold text-gray-800 mb-6">Committees</h1>
+          <h1 className="text-6xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-700">
+            Committees
+          </h1>
         </center>
-        <p className="text-gray-700 text-lg mb-6">
-          <strong>Conference is organised in Hybrid Mode</strong>
+        <p className="text-gray-700 text-2xl mb-12 text-center">
+          <strong>Conference is organized in Hybrid Mode</strong>
         </p>
 
-        <div className="space-y-8">
-          <div>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Conference Committee</h2>
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-xl font-semibold text-gray-700">Honorary Chair</h3>
-                <ul className="list-disc list-inside text-gray-600">
-                  <li>Prof. Dhruv Ghai, Oriental University Indore</li>
-                  <li>Prof. GS Tomar, REC Sonbhadra</li>
-                  <li>Prof. Garima Ghai, Oriental University Indore</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-gray-700">General Chair</h3>
-                <ul className="list-disc list-inside text-gray-600">
-                  <li>Prof. Shailendra Singh, Oriental University, Indore</li>
-                  <li>Prof. Manish Dixit, MITS Gwalior</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-gray-700">General Co-Chair</h3>
-                <ul className="list-disc list-inside text-gray-600">
-                  <li>Dr. Abul Bashar, PMU</li>
-                  <li>Dr. Robin Singh Bhadoria, NIT Hamirpur</li>
-                  <li>Dr. Manish Vyas, Oriental University, Indore</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-gray-700">Technical Program Committee Chair</h3>
-                <ul className="list-disc list-inside text-gray-600">
-                  <li>Dr. Atul Agarwal, Oriental University, Indore</li>
-                  <li>Dr. Vivek Singh Kushwah, CBIT Hyderabad</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-gray-700">Finance Committee Chairs</h3>
-                <ul className="list-disc list-inside text-gray-600">
-                  <li>Dr. MPS Chawla, SGSITS Indore</li>
-                  <li>Dr. K Musti, NUST, Namibia</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-gray-700">Publication Committee Chairs</h3>
-                <ul className="list-disc list-inside text-gray-600">
-                  <li>Dr. Megha Singh, Oriental University, Indore</li>
-                  <li>Mr. Anubhav Singh, Redbus Pvt Ltd</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-gray-700">Workshop Chairs</h3>
-                <ul className="list-disc list-inside text-gray-600">
-                  <li>Dr. Ashraf Samarah, University of Michigan</li>
-                  <li>Dr. Alhad Kuwadekar, Netherlands</li>
-                  <li>Dr. Debnath Bhattacharyya, KL University</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-gray-700">Publicity Committee Chairs</h3>
-                <ul className="list-disc list-inside text-gray-600">
-                  <li>Dr. Jagdish Bansal, SAU, Delhi</li>
-                  <li>Dr. Kashif Amjad, PMU, KSA</li>
-                  <li>Dr. Bishwajeet Pandey, IT University Astana</li>
-                  <li>Dr. Noorbakhsha, Mississippi Univ, USA</li>
-                  <li>Dr. Jitendra Agrawal, RGPV Bhopal</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-gray-700">Hospitality Committee Chairs</h3>
-                <ul className="list-disc list-inside text-gray-600">
-                  <li>Dr. Nazeeruddin Mohammad, PMU, KSA</li>
-                  <li>Dr. Ilyes Jenhani, PMU, KSA</li>
-                  <li>Dr. Taha Houda, PMU, KSA</li>
-                  <li>Dr. Jawad Alkhateeb, PMU, KSA</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-gray-700">Technical Program Committee</h3>
-                <ul className="list-disc list-inside text-gray-600">
-                  {/* List of Technical Program Committee members */}
-                 
-<li>Prof. Tai Hoon Kim, Korea</li>
-<li>Prof. Dr. Mehmet Efe, Turkey</li>
-<li>Dr. Layth AbdulRasool, Iran</li>
-<li>Prof. NS Chaudhari, IIT Indore, India</li>
-<li>Dr. MKS Sastry, NUST Namibia</li>
-<li>Prof. Dr. Ilias Savvas, Greece</li>
-<li>Dr. Ratheesh Kumar Meleppa, University of California Davis</li>
-<li>Dr. Sanjay Sutar, BATU Lonere</li>
-<li>Prof. Manjushree Adhha, BATU Lonere</li>
-<li>Dr. Brijesh Iyyer, BATU Lonere</li>
-<li>Prof. Manmohan Shukla, PSIT Kanpur</li>
-<li>Dr. Dharmendra Dixit, REC Sonbhadra</li>
-<li>Dr. NS Jadhav, BATU Lonere</li>
-<li>Prof. Fahrettin Sadıkoğlu, Cyprus</li>
-<li>Prof. Ali Haydar, Cyprus</li>
-<li>Dr. Kamil Dimililer, Cyprus</li>
-<li>Mr. Abhineet Tomar, Volvo, Sweden</li>
-<li>Dr. Hüseyin Öztoprak, Cyprus</li>
-<li>Dr. Tayfun Nesimoğlu, Cyprus</li>
-<li>Prof. Ciro Rodriguez, Peru</li>
-<li>Dr. Vivek Singh Kushwah, Amity Gwalior</li>
-<li>Prof. Stephen Wagner, Brazil</li>
-<li>Prof. Jorge Barbosa, Brazil</li>
-<li>Prof. Rajeev Tripathi, MNNIT Allahabad</li>
-<li>Dr. KV Arya, IIITM Gwalior</li>
-<li>Dr. Harkirat Singh, Samsung, USA</li>
-<li>Dr. Ngoc Tu Nguyen, Missouri University, USA</li>
-<li>Dr. Maman Abdurohman, Institut Teknologi Telkom, Indonesia</li>
-<li>Prof. Dr. Hai Jiang, Arkansas State University, USA</li>
-<li>Dr. Varun Jeoti, Petronas, Malaysia</li>
-<li>Dr. Joanne Scillitoe, Michigan Tech Univ, USA</li>
-<li>Prof. Dr. Helen Karatza, Greece</li>
-<li>Prof. Dr. Anna Lekova, Bulgaria</li>
-<li>Dr. Azrin Aris, Malaysia</li>
-<li>Dr. Jongman Cho, Korea</li>
-<li>Dr. BDK Patro, REC Kannauj</li>
-<li>Dr. Ranjeet Singh, ITM University</li>
-<li>Dr. Neeraj Shrivastava, RJIT</li>
-<li>Dr. Sanjay Kushwah, GEC</li>
-<li>Dr. Mamdouh Gouda, Egypt</li>
-<li>Dr. Beatris M, Spain</li>
-<li>Dr. Sani Sushanto, Indonesia</li>
-<li>Dr. Yong Ju Lee, Korea</li>
-<li>Dr. Amit Ojha, MANIT, Bhopal</li>
-<li>Prof. Dr. M.C. Govil, MNIT, Jaipur, India</li>
-<li>Prof. Dr. O.B.V. Ramanaiya, JNTU, Hyderabad, India</li>
-<li>Prof. Dr. Alaknanda Ashok, WIT Dehradun</li>
-<li>Prof. Dr. Pedro Albertos, Univ. Politecnica Valencia, Spain</li>
-<li>Prof. Dr. Mandava Rajeshwari, USM, Malaysia</li>
-<li>Dr. Xua Han, Kains Ave, USA</li>
-<li>Prof. Dr. Shailendra Singh, NITTTR</li>
-<li>Prof. Dr. Victor Govindaswamy, USA</li>
-<li>Prof. Dr. MS Whang, Brazil</li>
-<li>Dr. Trapti Jain, IIT Indore, India</li>
-<li>Dr. A.A. Lofti Neyestanak, Iran</li>
-<li>Prof. Dr. Houssem Jerbi, Lecap-Tunisia</li>
-<li>Prof. Dr. P. Chatterjee, National Tech. University, Argentina</li>
-<li>Dr. Aresh Dadlani, University of Tehran, Iran</li>
-<li>Prof. Dr. N. Krishnan, MSU, India</li>
-<li>Prof. Dr. B.K. Kanaujia, JNU Delhi</li>
-<li>Prof. Dr. Ghanshyam Singh, MNIT, Jaipur, India</li>
-<li>Dr. Surendra Gupta, Delhi</li>
-<li>Dr. BK Kaushik, IIT Roorkee</li>
-<li>Mr. Kunal Patel, Ingenuity Systems, USA</li>
-<li>Dr. Sahnaz Ayub, BIET, Jhansi, India</li>
-<li>Dr. Amitabha Dublin University</li>
-<li>Dr. Alhad Kuwadekar, Univ of South Wales, UK</li>
-<li>Dr. Hon Tat Hui, NUS, Singapore</li>
-<li>Dr. Ashok Singh, IIT Patna, India</li>
-<li>Dr. Yusuke NOJIMA, Osaka Prefecture University</li>
-<li>Prof. Dr. Frédéric Pinel, Luxembourg</li>
-<li>Dr. N.Ch.Sriman Narayana Iyengar, VIT Vellore, India</li>
-<li>Dr. Manoj Shukla, HBTI, Kanpur, India - Track Chair</li>
-<li>Dr. Shuza Binzaid, Texas University</li>
-<li>Prof. Mario KOEPPEN, Kyushu Inst of Tech. Fukuoka, Japan</li>
-<li>Prof. Dr. Michele Vadursi, University of Naples "Parthenope", Italy</li>
-<li>Dr. Rawya Rizk, Port-Said University, Egypt</li>
-<li>Dr. Junichi FUNASAKA, Hiroshima City University, Japan</li>
-<li>Dr. Mourad Abbas, Phonetics and Speech Processing Lab, crstdla, Algiers</li>
-<li>Dr. Zutao Zhu, Google Inc., Japan</li>
-<li>Dr. Simon Dobson, Univ. of St. Andrews, UK</li>
-<li>Dr. Amitabha Chakraborty, Dublin Univ, Ireland</li>
-<li>Prof. Jaime Caro, University of Philippines, Philippines</li>
-<li>Dr. Debnath Bhattacharyya, Kolkata</li>
-<li>Dr. Bruno Fernandes</li>
-<li>Mr. Abhineet Tomar, VOLVO Sweden</li>
-<li>Dr. DK Tripathi, REC Sonbhadra</li>
-<li>Dr. BK Chaurasia, IIIT Lucknow</li>
-<li>Dr. Paolo Roborto Grassi, Milan, Italy</li>
-<li>Dr. Bareh Asadi, Iran</li>
-<li>Dr. Sanjeev Sharma, RGPV Bhopal</li>
-<li>Dr. Biju Issac, Teesside University, Middlesbrough, Tees Valley, UK</li>
-<li>Prof. Dr. Cai Zhimming, Macau Univ, China</li>
-<li>Dr. Neeraj Shrivastava, RJIT Jaipur</li>
-<li>Dr. Laxmit Shrivastava, MITS Gwalior</li>
-<li>Prof. MPS Chawla, SGSITS Indore</li>
-<li>Dr. Manmohan Shukla, PSIT Kanpur</li>
-<li>Dr. Ruidan Su, Dalian, China - Track Chair</li>
-<li>Dr. Roshan Chhetri, Bhutan</li>
-<li>Prof. Dr. Li Jun Zhang, Champlain College, USA</li>
-<li>Dr. Arvind Singh, UWI Trinidad</li>
-<li>Dr. Jitendra Agrawal, RGPV Bhopal</li>
-<li>Dr. Ashiish Bagwari, WIT Dehradun</li>
-<li>Dr. Amir Houmansadr, University of Texas, Austin</li>
-<li>Dr. Thorsten Schöler, Germany</li>
-<li>Dr. Zhiyuan Tan, Australia</li>
-<li>Dr. Ashish Agrawal, Boston Univ, USA</li>
-<li>Dr. Subhashis Bhattacharya, Bristol Univ, U.K.</li>
-<li>Dr. Jens Nielsen, Aalborg Univ, Denmark</li>
-<li>Dr. Dong Huang, China</li>
-<li>Dr. Jiewen Huang, China</li>
-<li>Dr. Agya Mishra, India</li>
-<li>Dr. Ankit Chaudhary, MUM, Fairfield, USA</li>
-<li>Dr. Imad Jawhar, United Arab Emirates Univ, Al Ain, UAE</li>
-<li>Dr. Martyna Ulinowicz, Warsaw Univ. of Technology, Poland</li>
-<li>Dr. Velmurugan Ayyadurai, University of Surrey, U.K.</li>
-<li>Prof. Dr. Rodrigo C. Bortoletto, São Paulo Federal Institute, Brazil</li>
-<li>Dr. Shikha Agrawal, RGPV, Bhopal</li>
-<li>Dr. Gregorio Andria, Italy</li>
-<li>Dr. Danilo Pelusi, University of Teramo, Italy</li>
-<li>Dr. Abhishek Shukla, KNIT Sultanpur</li>
-<li>Dr. Deng Huifang, Guangzhou, China</li>
-<li>Dr. Deepak Singh Tomar, MANIT, Bhopal, India</li>
-<li>Dr. Tatsuya Suda, University Netgroup Inc., USA</li>
-                </ul>
-              </div>
+        <div className="flex flex-col items-center space-y-8">
+          {committees.map((committee, index) => (
+            <div
+              key={index}
+              className="w-full max-w-xl p-12 bg-gray-100 rounded-lg shadow-md transition-shadow duration-300 hover:shadow-xl hover:shadow-blue-500"
+            >
+              <h3 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">
+                {committee.title}
+              </h3>
+              <ul className="list-disc list-inside text-gray-800">
+                {committee.members.map((member, i) => (
+                  <li key={i} className="text-base">
+                    {member}
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
@@ -235,4 +236,3 @@ const Committee = () => {
 };
 
 export default Committee;
-

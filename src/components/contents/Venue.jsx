@@ -8,8 +8,8 @@ import hostelImg from '../../assets/Hostel.jpg'; // Ensure this path is correct
 const Venue = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="bg-white p-6 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+      <div className="bg-white p-6 rounded-lg shadow-lg text-justify leading-relaxed">
+        <h1 className="text-3xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-700 text-center">
           Conference Venue
         </h1>
 

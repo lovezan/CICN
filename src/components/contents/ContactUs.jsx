@@ -5,7 +5,7 @@ const ContactUs = () => {
     <div className="container mx-auto px-4 py-8">
       <div className="bg-gradient-to-r from-gray-900 to-gray-800 p-6 rounded-lg shadow-xl">
         <center>
-          <h1 className="text-4xl font-bold text-gray-100 mb-6">Contact Us</h1>
+          <h1 className="text-3xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-700">Contact Us</h1>
         </center>
         <div className="text-gray-200 mb-8">
           <ul className="list-disc pl-5 space-y-6">

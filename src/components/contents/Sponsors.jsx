@@ -9,7 +9,7 @@ const Sponsors = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="bg-gradient-to-r from-teal-100 to-teal-300 p-8 rounded-lg shadow-2xl">
-        <h1 className="text-4xl font-extrabold text-gray-900 mb-8 text-center">
+        <h1 className="text-3xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-700 text-center">
           Sponsors and Organizers
         </h1>
 

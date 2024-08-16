@@ -6,7 +6,7 @@ const Proceedings = () => {
     <div className="container mx-auto px-4 py-8">
       <div className="bg-white p-6 rounded-lg shadow-lg">
         <center>
-          <h1 className="text-3xl font-bold text-gray-800 mb-6">Proceedings</h1>
+          <h1 className="text-3xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-700">Proceedings</h1>
         </center>
         <div className="space-y-4 text-gray-800 text-justify">
           <p className="leading-relaxed">

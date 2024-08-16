@@ -7,7 +7,9 @@ const ImportantDatesAndScheduling = () => {
       <div className="mb-4">
         <FaClock className="text-4xl text-blue-500 mx-auto mb-2" />
       </div>
-      <h1 className="text-3xl font-bold mb-4">Important Dates and Scheduling</h1>
+      <h1 className="text-3xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-700">
+        Important Dates and Scheduling
+      </h1>
       <p className="text-xl">
         The important dates and scheduling will be released soon. Stay tuned!
       </p>

@@ -8,7 +8,7 @@ const CallForPapers = () => {
     <div className="container mx-auto px-4 py-8">
       <div className="bg-gradient-to-r from-gray-100 to-gray-200 p-6 text-justify rounded-lg shadow-xl">
         <center>
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+          <h2 className="text-3xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-700">
             Call For Papers
           </h2>
         </center>

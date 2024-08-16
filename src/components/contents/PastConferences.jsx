@@ -9,7 +9,7 @@ const PastConferences = () => {
     <div className="container mx-auto px-4 py-8">
       <div className="bg-gray-100 p-6 rounded-lg shadow-xl text-justify">
         <center>
-          <h1 className="text-3xl font-bold text-gray-800 mb-6">Past Conferences</h1>
+          <h1 className="text-3xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-700">Past Conferences</h1>
         </center>
         <div className="space-y-6">
           <ul className="list-disc list-inside space-y-2 text-gray-800">
