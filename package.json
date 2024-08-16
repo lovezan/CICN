@@ -1,5 +1,6 @@
 {
-  "name": "my-react-app",
+  "name": "cicn_app",
+  "homepage": "https://www.cicn.in/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

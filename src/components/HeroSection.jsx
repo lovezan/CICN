@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Importing images
 import tech1 from '../assets/tech1.jpg';
 import or from '../assets/or.jpeg';
+import Ou from '../assets/Ou_new.jpeg';
 import tech2 from '../assets/tech2.jpg';
 import tech3 from '../assets/tech3.avif';
 import tech4 from '../assets/tech4.jpg';
@@ -15,6 +16,13 @@ const HeroSection = () => {
   return (
     <header className="relative w-full overflow-hidden">
       <Carousel interval={3000}>
+        <Carousel.Item>
+        <img
+            src={Ou}
+            alt="Slide 1"
+            className="d-block w-100 h-[17vh] sm:h-[30vh] object-cover"
+          />
+        </Carousel.Item>
         <Carousel.Item>
         <img
             src={or}
