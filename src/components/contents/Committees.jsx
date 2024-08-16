@@ -201,28 +201,28 @@ const committees = [
 const Committee = () => {
   return (
     <div className="container mx-auto px-4 py-12 text-gray-900">
-      <div className="bg-gray-200 p-12 rounded-3xl shadow-lg">
+      <div className="bg-gray-200 p-6 sm:p-8 md:p-10 lg:p-12 rounded-3xl shadow-lg">
         <center>
-          <h1 className="text-6xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-700">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 sm:mb-6 lg:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-700">
             Committees
           </h1>
         </center>
-        <p className="text-gray-700 text-2xl mb-12 text-center">
+        <p className="text-lg sm:text-xl md:text-2xl mb-4 sm:mb-6 md:mb-8 text-center">
           <strong>Conference is organized in Hybrid Mode</strong>
         </p>
 
-        <div className="flex flex-col items-center space-y-8">
+        <div className="flex flex-col items-center space-y-6">
           {committees.map((committee, index) => (
             <div
               key={index}
-              className="w-full max-w-xl p-12 bg-gray-100 rounded-lg shadow-md transition-shadow duration-300 hover:shadow-xl hover:shadow-blue-500"
+              className="w-full max-w-md sm:max-w-lg md:max-w-xl p-4 sm:p-6 md:p-8 lg:p-10 bg-gray-100 rounded-lg shadow-md transition-shadow duration-300 hover:shadow-xl hover:shadow-blue-500"
             >
-              <h3 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 lg:mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">
                 {committee.title}
               </h3>
-              <ul className="list-disc list-inside text-gray-800">
+              <ul className="list-disc list-inside text-gray-800 text-sm sm:text-base">
                 {committee.members.map((member, i) => (
-                  <li key={i} className="text-base">
+                  <li key={i} className="mb-1">
                     {member}
                   </li>
                 ))}

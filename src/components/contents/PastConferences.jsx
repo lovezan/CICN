@@ -7,10 +7,12 @@ const PastConferences = () => {
     <div className="container mx-auto px-4 py-8">
       <div className="bg-gray-100 p-6 rounded-lg shadow-xl text-justify">
         <center>
-          <h1 className="text-3xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-700">Past Conferences</h1>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-700">
+            Past Conferences
+          </h1>
         </center>
-        <div className="space-y-6">
-          <ul className="list-disc list-inside space-y-2 text-gray-800">
+        <div className="space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-8">
+          <ul className="list-disc list-inside space-y-2 text-gray-800 text-xs sm:text-sm md:text-base lg:text-lg">
             <li>CICSyN 2009, Indore, 23-25 July 2009</li>
             <li>NaBiC 2009, Coimbatore, 7-9 Dec 2009</li>
             <li>2nd CICN 2010, Bhopal, 26-28 Nov 2010</li>
@@ -42,21 +44,21 @@ const PastConferences = () => {
             <li>15th CICN 2023, Bangkok, Thailand, 22-23 Dec 2023</li>
             <li>12th CSNT 2024, Jabalpur, 06-07 Apr 2024</li>
             <li>
-              <p className="font-bold">CICN 2024</p>
-              <p>Proceedings of all the conferences are available at IEEE Xplore</p>
+              <p className="font-bold text-xs sm:text-sm md:text-base lg:text-lg">CICN 2024</p>
+              <p className="text-xs sm:text-xs md:text-sm lg:text-base">Proceedings of all the conferences are available at IEEE Xplore</p>
             </li>
           </ul>
         </div>
         <div className="mt-8 flex flex-wrap gap-6 justify-center">
-          <div className="relative w-full sm:w-60 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <div className="relative w-full sm:w-60 md:w-72 lg:w-80 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <img src={os1} alt="Event" className="object-cover w-full h-full" />
-            <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-white text-xl font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-white text-xs sm:text-sm md:text-base lg:text-lg font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300">
               Event
             </div>
           </div>
-          <div className="relative w-full sm:w-72 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <div className="relative w-full sm:w-60 md:w-72 lg:w-80 h-40 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <img src={os2} alt="Conference" className="object-cover w-full h-full" />
-            <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-white text-xl font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-white text-xs sm:text-sm md:text-base lg:text-lg font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300">
               Conference
             </div>
           </div>
