@@ -1,22 +1,15 @@
+
 import React, { useState, useRef, useEffect } from 'react';
 import { FiMenu, FiX, FiChevronDown } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';
 import "./Navbar.css";
+
 const Navbar = ({ handleClick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(null);
   const dropdownRef = useRef(null);
 
   const toggleMenu = () => setIsOpen(!isOpen);
-
-  // Close menu and scroll to the target section
-  const handleItemClick = (item) => {
-    if (handleClick) {
-      handleClick(item);
-    }
-    setIsOpen(false); // Close the menu
-    scrollToSection(item); // Scroll to the target section
-  };
 
   // Smooth scroll to the section based on the item clicked
   const scrollToSection = (section) => {
@@ -27,6 +20,15 @@ const Navbar = ({ handleClick }) => {
         behavior: 'smooth',
       });
     }
+  };
+
+  // Close menu and scroll to the target section
+  const handleItemClick = (item) => {
+    if (handleClick) {
+      handleClick(item);
+    }
+    setIsOpen(false); // Close the menu
+    scrollToSection(item); // Scroll to the target section
   };
 
   // Close dropdown if click is outside
@@ -45,14 +47,14 @@ const Navbar = ({ handleClick }) => {
     <nav className="bg-blue-800 text-white sticky top-0 z-50">
       <div className="grid justify-items-center items-center border-b border-gray-600">
         {/* Menu Button */}
-        <button onClick={toggleMenu} className="text-xl w-full md:hidden flex justify-center items-center"  >
+        <button onClick={toggleMenu} className="text-xl w-full md:hidden flex justify-center items-center">
           {isOpen ? <FiX /> : <FiMenu />}
         </button>
 
         {/* Menu Items */}
         <div className={`md:flex md:items-center ${isOpen ? 'block' : 'hidden'}`}>
-          <a 
-            onClick={() => handleItemClick('Home')} 
+          <a
+            onClick={() => handleItemClick('Home')}
             className="block px-3 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
             style={{ textDecoration: 'none' }}
           >
@@ -60,22 +62,22 @@ const Navbar = ({ handleClick }) => {
           </a>
 
           {/* Registration Dropdown */}
-          <a 
-            onClick={() => handleItemClick('Registration')} 
+          <a
+            onClick={() => handleItemClick('Registration')}
             className="block px-3 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
             style={{ textDecoration: 'none' }}
           >
             REGISTRATION
           </a>
-        
+
           {/* Author Exchange & Past Conferences Dropdown */}
-          <div 
+          <div
             className="relative group"
             onClick={() => setShowDropdown(showDropdown === 'authorPast' ? null : 'authorPast')}
           >
-            <a 
-              className="flex items-center gap-1 px-3 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs" 
-              style={{ textDecoration: 'none'} }
+            <a
+              className="flex items-center gap-1 px-3 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
+              style={{ textDecoration: 'none' }}
             >
               PAPER SUBMISSION
               <FiChevronDown
@@ -91,37 +93,37 @@ const Navbar = ({ handleClick }) => {
                   exit={{ opacity: 0, y: 8 }}
                   className="absolute left-0 top-full mt-1 w-48 rounded-md bg-blue-700 text-white shadow-lg z-50 border border-white"
                 >
-                  <a 
-                    onClick={() => handleItemClick('Call for Papers')} 
-                    className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs" 
+                  <a
+                    onClick={() => handleItemClick('Call for Papers')}
+                    className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
                     style={{ textDecoration: 'none' }}
                   >
                     Call for Papers
                   </a>
-                  <a 
-                    onClick={() => handleItemClick('Paper Submission')} 
-                    className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs" 
+                  <a
+                    onClick={() => handleItemClick('Paper Submission')}
+                    className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
                     style={{ textDecoration: 'none' }}
                   >
                     Paper Submission
                   </a>
-                  <a 
-                    onClick={() => handleItemClick('Past Conferences')} 
-                    className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs" 
+                  <a
+                    onClick={() => handleItemClick('Past Conferences')}
+                    className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
                     style={{ textDecoration: 'none' }}
                   >
                     Past Conferences
                   </a>
-                  <a 
-                    onClick={() => handleItemClick('Proceedings')} 
-                    className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs" 
+                  <a
+                    onClick={() => handleItemClick('Proceedings')}
+                    className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
                     style={{ textDecoration: 'none' }}
                   >
                     PROCEEDINGS
                   </a>
-                  <a 
-                    onClick={() => handleItemClick('Keynote Speakers')} 
-                    className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs" 
+                  <a
+                    onClick={() => handleItemClick('Keynote Speakers')}
+                    className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
                     style={{ textDecoration: 'none' }}
                   >
                     Keynote Speakers
@@ -132,8 +134,8 @@ const Navbar = ({ handleClick }) => {
           </div>
 
           {/* Proceedings */}
-          <a 
-            onClick={() => handleItemClick('ImportantDates Scheduling')} 
+          <a
+            onClick={() => handleItemClick('ImportantDates Scheduling')}
             className="block px-3 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
             style={{ textDecoration: 'none' }}
           >
@@ -141,20 +143,20 @@ const Navbar = ({ handleClick }) => {
           </a>
 
           {/* Committees */}
-          <a 
-            onClick={() => handleItemClick('Committees')} 
+          <a
+            onClick={() => handleItemClick('Committees')}
             className="block px-3 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
             style={{ textDecoration: 'none' }}
           >
             COMMITTEES
           </a>
-        
+
           {/* Keynote Speakers & Sponsors Dropdown */}
-          <div 
+          <div
             className="relative group"
             onClick={() => setShowDropdown(showDropdown === 'keynoteSponsors' ? null : 'keynoteSponsors')}
           >
-            <a 
+            <a
               className="flex items-center gap-1 px-3 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
               style={{ textDecoration: 'none' }}
             >
@@ -172,16 +174,16 @@ const Navbar = ({ handleClick }) => {
                   exit={{ opacity: 0, y: 8 }}
                   className="absolute left-0 top-full mt-1 w-48 rounded-md bg-blue-700 text-white shadow-lg z-50 border border-white"
                 >
-                  <a 
-                    onClick={() => handleItemClick('Venue/Accommodation')} 
-                    className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs" 
+                  <a
+                    onClick={() => handleItemClick('Venue/Accommodation')}
+                    className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
                     style={{ textDecoration: 'none' }}
                   >
                     Venue/Accommodation
                   </a>
-                  <a 
-                    onClick={() => handleItemClick('Sponsors')} 
-                    className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs" 
+                  <a
+                    onClick={() => handleItemClick('Sponsors')}
+                    className="block px-4 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
                     style={{ textDecoration: 'none' }}
                   >
                     Sponsors
@@ -192,8 +194,8 @@ const Navbar = ({ handleClick }) => {
           </div>
 
           {/* Contact Us */}
-          <a 
-            onClick={() => handleItemClick('Contact Us')} 
+          <a
+            onClick={() => handleItemClick('Contact Us')}
             className="block px-3 py-2 cursor-pointer hover:bg-sky-400 text-white text-xs"
             style={{ textDecoration: 'none' }}
           >
@@ -203,7 +205,7 @@ const Navbar = ({ handleClick }) => {
       </div>
 
       {/* Hover effect for larger screens */}
-      <style >{`
+      <style>{`
         @media (min-width: 768px) {
           .group:hover .absolute {
             display: block;
