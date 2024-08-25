@@ -22,8 +22,8 @@ const Home = () => {
         </center>
         <p className="mb-4 text-justify leading-relaxed text-base">
           The 16th International Conference on Computational Intelligence and
-          Communication Networks 2024 is organized by Oriental University,
-          Indore in association with IEEE Madhya Pradesh Section as the flagship
+          Communication Networks 2024 is organized by <strong>Oriental University,
+          Indore</strong> in association with IEEE Madhya Pradesh Section as the flagship
           conference of the Section. The conference is technically sponsored by{" "}
           <strong>Machine Intelligence Research Labs, Gwalior</strong> and{" "}
           <strong>IETE Gwalior Sub-Centre</strong> to address various issues to

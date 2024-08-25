@@ -13,7 +13,7 @@ const Header = () => {
              16th IEEE International Conference on Computational Intelligence and Communication Networks
             </div>
             <div className="text-xs sm:text-xs md:text-sm">
-              22–23 December 2024 // Indore, India // Oriental University
+              22–23 December 2024 // Oriental University // Indore, India 
             </div>
           </div>
         </div>

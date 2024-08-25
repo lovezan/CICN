@@ -13,16 +13,16 @@ const CallForPapers = () => {
           </h2>
         </center>
         <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
-          The 16th IEEE International Conference on Communication Systems and
-          Network Technologies 2024 is planned to be organized to bring together
-          selected minds from various research communities, to have
-          brainstorming sessions on their research outcomes selected to be
-          published on an international digital library. The participation is
-          aimed from academia and industry working in all major areas and
-          interdisciplinary areas of computational intelligence, communication
-          systems, computer networks, and soft computing to share their
-          experience, and exchange and cross-fertilize their ideas. CSNT 2024
-          will be conducted at Bhopal, India as a flagship conference of IEEE
+          16th IEEE International Conference on Computatinal Intelligence and
+          Communication Networks (CICN) 2024 is planned to be organised to bring
+          together selected minds from various research communities, to have
+          branstorming sessions on thier reserach outcomes selected to be
+          published on international digital library. the participation is aimed
+          from academia and industry working in all major areas and
+          interdisciplinary areas of computational intelligence, Communication
+          systems, computer networks and soft computing to share their
+          experience, and exchange and cross-fertilize their ideas. CICN 2024
+          will be conducted at Oriental University Indore ,India as flagship conference of IEEE
           Madhya Pradesh Section. Papers are invited on the following track but
           not limited to:
         </p>
